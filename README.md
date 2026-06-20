@@ -1,2 +1,2 @@
-# Daily-login
-Daily log sheet for teachers
+# Daily-learning log
+Daily learning logsheet 
