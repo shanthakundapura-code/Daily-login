@@ -137,8 +137,9 @@ function renderSessions() {
   sessions.forEach(function(s) {
     var card = document.createElement('div'); card.className = 'session-card'; card.setAttribute('data-session', s.s); card.setAttribute('data-time', s.t);
     card.innerHTML = '<div class="session-header"><span>Session '+s.s+' ('+safe(s.t)+')</span><span>Subject can be edited</span></div>' +
-      '<div class="row"><div class="form-group"><label>Subject</label><input class="subject-input" type="text" value="'+safe(s.sub)+'"></div><div class="form-group"><label>Due Date</label><input class="due" type="date"></div></div>' +
-      '<div class="row"><div class="form-group"><label>Daily Learning Update</label><textarea class="update" placeholder="What did students learn today?"></textarea></div><div class="form-group"><label>Homework / Assignment</label><textarea class="homework" placeholder="Homework or assignment"></textarea></div></div>' +
+      '<div class="row"><div class="form-group"><label>Subject</label><input class="subject-input" type="text" value="'+safe(s.sub)+'"></div></div>' +
+      '<div class="row"><div class="form-group"><label>Daily Learning Update</label><textarea class="update" placeholder="What did students learn today?"></textarea></div></div>' +
+      '<div class="row"><div class="form-group"><label>Homework / Assignment</label><textarea class="homework" placeholder="Homework or assignment"></textarea></div><div class="form-group"><label>Due Date</label><input class="due" type="date"></div></div>' +
       '<div class="row"><div class="form-group"><label>Upcoming Assessment</label><input class="assessment" type="text" placeholder="Assessment update, if any"></div></div>' +
       '<button class="button blue small-btn save-session" type="button">Save This Session Entry</button><div class="status"></div>';
     c.appendChild(card);
