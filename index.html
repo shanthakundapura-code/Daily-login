@@ -90,8 +90,4347 @@ var CONFIG = {
   LOAD_ENTRIES_URL: 'PASTE_LOAD_ENTRIES_URL_HERE',
   FINAL_SUBMIT_URL: 'PASTE_FINAL_SUBMIT_URL_HERE'
 };
-var GRADES = ["EYP 1", "EYP 2", "EYP 3", "PYP 1", "PYP 2", "PYP 3", "PYP 4", "PYP 5", "MYP 1 Omega", "MYP 1 Delta", "MYP 2", "MYP 3", "MYP 4", "MYP 5", "DP 1", "DP 2"];
-var TIMETABLES = {"MYP 1 Omega": {"MON": [{"s": 1, "t": "8:45 AM - 9:45 AM", "sub": "Guitar/Keyboard/Vocal"}, {"s": 2, "t": "10:00 AM - 11:00 AM", "sub": "Maths"}, {"s": 3, "t": "11:00 AM - 12:00 PM", "sub": "INS"}, {"s": 4, "t": "12:30 PM - 1:30 PM", "sub": "SDG/Wellness"}, {"s": 5, "t": "1:30 PM - 2:30 PM", "sub": "VA (Sem 1) / PA (Sem 2)"}, {"s": 6, "t": "2:30 PM - 3:30 PM", "sub": "Language Acquisition (French/Hindi)"}], "TUE": [{"s": 1, "t": "8:45 AM - 9:45 AM", "sub": "Language Acquisition (French/Hindi)"}, {"s": 2, "t": "10:00 AM - 11:00 AM", "sub": "PHE"}, {"s": 3, "t": "11:00 AM - 12:00 PM", "sub": "LL"}, {"s": 4, "t": "12:30 PM - 1:30 PM", "sub": "INS"}, {"s": 5, "t": "1:30 PM - 2:30 PM", "sub": "Integrated Sciences"}, {"s": 6, "t": "2:30 PM - 3:30 PM", "sub": "VA (Sem 1) / PA (Sem 2)"}], "WED": [{"s": 1, "t": "8:45 AM - 9:45 AM", "sub": "Karate/Silambam"}, {"s": 2, "t": "10:00 AM - 11:00 AM", "sub": "INS"}, {"s": 3, "t": "11:00 AM - 12:00 PM", "sub": "Maths"}, {"s": 4, "t": "12:30 PM - 1:30 PM", "sub": "LL"}, {"s": 5, "t": "1:30 PM - 2:30 PM", "sub": "PD (Sem 1) / DD (Sem 2)"}, {"s": 6, "t": "2:30 PM - 3:30 PM", "sub": "Integrated Sciences"}], "THUR": [{"s": 1, "t": "8:45 AM - 9:45 AM", "sub": "PD (Sem 1) / DD (Sem 2)"}, {"s": 2, "t": "10:00 AM - 11:00 AM", "sub": "Language Acquisition (French/Hindi)"}, {"s": 3, "t": "11:00 AM - 12:00 PM", "sub": "LL"}, {"s": 4, "t": "12:30 PM - 1:30 PM", "sub": "PHE"}, {"s": 5, "t": "1:30 PM - 2:30 PM", "sub": "Integrated Sciences"}, {"s": 6, "t": "2:30 PM - 3:30 PM", "sub": "LIBRARY"}], "FRI": [{"s": 1, "t": "8:45 AM - 9:45 AM", "sub": "Robotics/Chess/Coding"}, {"s": 2, "t": "10:00 AM - 11:00 AM", "sub": "PHE"}, {"s": 3, "t": "11:00 AM - 12:00 PM", "sub": "VA (Sem 1) / PA (Sem 2)"}, {"s": 4, "t": "12:30 PM - 1:30 PM", "sub": "Maths"}, {"s": 5, "t": "1:30 PM - 2:30 PM", "sub": "PD (Sem 1) / DD (Sem 2)"}, {"s": 6, "t": "2:30 PM - 3:30 PM", "sub": "CLUB"}]}, "MYP 1 Delta": {"MON": [{"s": 1, "t": "8:45 AM - 9:45 AM", "sub": "Guitar/Keyboard/Vocal"}, {"s": 2, "t": "10:00 AM - 11:00 AM", "sub": "Maths"}, {"s": 3, "t": "11:00 AM - 12:00 PM", "sub": "Integrated Sciences"}, {"s": 4, "t": "12:30 PM - 1:30 PM", "sub": "SDG/Wellness"}, {"s": 5, "t": "1:30 PM - 2:30 PM", "sub": "PA (Sem 1) / VA (Sem 2)"}, {"s": 6, "t": "2:30 PM - 3:30 PM", "sub": "Language Acquisition"}], "TUE": [{"s": 1, "t": "8:45 AM - 9:45 AM", "sub": "Language Acquisition"}, {"s": 2, "t": "10:00 AM - 11:00 AM", "sub": "LL"}, {"s": 3, "t": "11:00 AM - 12:00 PM", "sub": "PHE"}, {"s": 4, "t": "12:30 PM - 1:30 PM", "sub": "LIBRARY"}, {"s": 5, "t": "1:30 PM - 2:30 PM", "sub": "INS"}, {"s": 6, "t": "2:30 PM - 3:30 PM", "sub": "PA (Sem 1) / VA (Sem 2)"}], "WED": [{"s": 1, "t": "8:45 AM - 9:45 AM", "sub": "Karate/Silambam"}, {"s": 2, "t": "10:00 AM - 11:00 AM", "sub": "PHE"}, {"s": 3, "t": "11:00 AM - 12:00 PM", "sub": "INS"}, {"s": 4, "t": "12:30 PM - 1:30 PM", "sub": "Integrated Sciences"}, {"s": 5, "t": "1:30 PM - 2:30 PM", "sub": "DD (Sem 1) / PD (Sem 2)"}, {"s": 6, "t": "2:30 PM - 3:30 PM", "sub": "LL"}], "THUR": [{"s": 1, "t": "8:45 AM - 9:45 AM", "sub": "DD (Sem 1) / PD (Sem 2)"}, {"s": 2, "t": "10:00 AM - 11:00 AM", "sub": "Language Acquisition"}, {"s": 3, "t": "11:00 AM - 12:00 PM", "sub": "LL"}, {"s": 4, "t": "12:30 PM - 1:30 PM", "sub": "PHE"}, {"s": 5, "t": "1:30 PM - 2:30 PM", "sub": "INS"}, {"s": 6, "t": "2:30 PM - 3:30 PM", "sub": "Maths"}], "FRI": [{"s": 1, "t": "8:45 AM - 9:45 AM", "sub": "Robotics/Chess/Coding"}, {"s": 2, "t": "10:00 AM - 11:00 AM", "sub": "Maths"}, {"s": 3, "t": "11:00 AM - 12:00 PM", "sub": "PA (Sem 1) / VA (Sem 2)"}, {"s": 4, "t": "12:30 PM - 1:30 PM", "sub": "Integrated Sciences"}, {"s": 5, "t": "1:30 PM - 2:30 PM", "sub": "DD (Sem 1) / PD (Sem 2)"}, {"s": 6, "t": "2:30 PM - 3:30 PM", "sub": "CLUB"}]}, "MYP 2": {"MON": [{"s": 1, "t": "8:45 AM - 9:45 AM", "sub": "Guitar/Keyboard/Vocal"}, {"s": 2, "t": "10:00 AM - 11:00 AM", "sub": "DD (Sem 1) / PD (Sem 2)"}, {"s": 3, "t": "11:00 AM - 12:00 PM", "sub": "INS"}, {"s": 4, "t": "12:30 PM - 1:30 PM", "sub": "SDG/Wellness"}, {"s": 5, "t": "1:30 PM - 2:30 PM", "sub": "Language Acquisition"}, {"s": 6, "t": "2:30 PM - 3:30 PM", "sub": "LIBRARY"}], "TUE": [{"s": 1, "t": "8:45 AM - 9:45 AM", "sub": "DD (Sem 1) / PD (Sem 2)"}, {"s": 2, "t": "10:00 AM - 11:00 AM", "sub": "VA (Sem 1) / PA (Sem 2)"}, {"s": 3, "t": "11:00 AM - 12:00 PM", "sub": "INS"}, {"s": 4, "t": "12:30 PM - 1:30 PM", "sub": "Maths"}, {"s": 5, "t": "1:30 PM - 2:30 PM", "sub": "LL"}, {"s": 6, "t": "2:30 PM - 3:30 PM", "sub": "PHE"}], "WED": [{"s": 1, "t": "8:45 AM - 9:45 AM", "sub": "Karate/Silambam"}, {"s": 2, "t": "10:00 AM - 11:00 AM", "sub": "VA (Sem 1) / PA (Sem 2)"}, {"s": 3, "t": "11:00 AM - 12:00 PM", "sub": "Language Acquisition"}, {"s": 4, "t": "12:30 PM - 1:30 PM", "sub": "LL"}, {"s": 5, "t": "1:30 PM - 2:30 PM", "sub": "Maths"}, {"s": 6, "t": "2:30 PM - 3:30 PM", "sub": "Integrated Sciences"}], "THUR": [{"s": 1, "t": "8:45 AM - 9:45 AM", "sub": "INS"}, {"s": 2, "t": "10:00 AM - 11:00 AM", "sub": "PHE"}, {"s": 3, "t": "11:00 AM - 12:00 PM", "sub": "Maths"}, {"s": 4, "t": "12:30 PM - 1:30 PM", "sub": "VA (Sem 1) / PA (Sem 2)"}, {"s": 5, "t": "1:30 PM - 2:30 PM", "sub": "Integrated Sciences"}, {"s": 6, "t": "2:30 PM - 3:30 PM", "sub": "DD (Sem 1) / PD (Sem 2)"}], "FRI": [{"s": 1, "t": "8:45 AM - 9:45 AM", "sub": "Robotics/Chess/Coding"}, {"s": 2, "t": "10:00 AM - 11:00 AM", "sub": "Language Acquisition"}, {"s": 3, "t": "11:00 AM - 12:00 PM", "sub": "LL"}, {"s": 4, "t": "12:30 PM - 1:30 PM", "sub": "PHE"}, {"s": 5, "t": "1:30 PM - 2:30 PM", "sub": "Integrated Sciences"}, {"s": 6, "t": "2:30 PM - 3:30 PM", "sub": "CLUB"}]}, "MYP 3": {"MON": [{"s": 1, "t": "8:45 AM - 9:45 AM", "sub": "Robotics/Chess/Coding"}, {"s": 2, "t": "10:00 AM - 11:00 AM", "sub": "Language Acquisition"}, {"s": 3, "t": "11:00 AM - 12:00 PM", "sub": "Maths"}, {"s": 4, "t": "12:30 PM - 1:30 PM", "sub": "VA (Sem 1) / PA (Sem 2)"}, {"s": 5, "t": "1:30 PM - 2:30 PM", "sub": "PHE"}, {"s": 6, "t": "2:30 PM - 3:30 PM", "sub": "LL"}], "TUE": [{"s": 1, "t": "8:45 AM - 9:45 AM", "sub": "PHE"}, {"s": 2, "t": "10:00 AM - 11:00 AM", "sub": "DD (Sem 1) / PD (Sem 2)"}, {"s": 3, "t": "11:00 AM - 12:00 PM", "sub": "Integrated Sciences"}, {"s": 4, "t": "12:30 PM - 1:30 PM", "sub": "INS"}, {"s": 5, "t": "1:30 PM - 2:30 PM", "sub": "Language Acquisition"}, {"s": 6, "t": "2:30 PM - 3:30 PM", "sub": "SDG/Wellness"}], "WED": [{"s": 1, "t": "8:45 AM - 9:45 AM", "sub": "Guitar/Keyboard/Vocal"}, {"s": 2, "t": "10:00 AM - 11:00 AM", "sub": "DD (Sem 1) / PD (Sem 2)"}, {"s": 3, "t": "11:00 AM - 12:00 PM", "sub": "INS"}, {"s": 4, "t": "12:30 PM - 1:30 PM", "sub": "VA (Sem 1) / PA (Sem 2)"}, {"s": 5, "t": "1:30 PM - 2:30 PM", "sub": "Integrated Sciences"}, {"s": 6, "t": "2:30 PM - 3:30 PM", "sub": "Maths"}], "THUR": [{"s": 1, "t": "8:45 AM - 9:45 AM", "sub": "Language Acquisition"}, {"s": 2, "t": "10:00 AM - 11:00 AM", "sub": "Integrated Sciences"}, {"s": 3, "t": "11:00 AM - 12:00 PM", "sub": "Maths"}, {"s": 4, "t": "12:30 PM - 1:30 PM", "sub": "INS"}, {"s": 5, "t": "1:30 PM - 2:30 PM", "sub": "VA (Sem 1) / PA (Sem 2)"}, {"s": 6, "t": "2:30 PM - 3:30 PM", "sub": "LL"}], "FRI": [{"s": 1, "t": "8:45 AM - 9:45 AM", "sub": "Karate/Silambam"}, {"s": 2, "t": "10:00 AM - 11:00 AM", "sub": "LL"}, {"s": 3, "t": "11:00 AM - 12:00 PM", "sub": "DD (Sem 1) / PD (Sem 2)"}, {"s": 4, "t": "12:30 PM - 1:30 PM", "sub": "LIBRARY"}, {"s": 5, "t": "1:30 PM - 2:30 PM", "sub": "PHE"}, {"s": 6, "t": "2:30 PM - 3:30 PM", "sub": "CLUB"}]}, "EYP 1": {"MON": [{"s": 1, "t": "8:45 AM - 9:45 AM", "sub": "Session 1 subject - edit if needed"}, {"s": 2, "t": "10:00 AM - 11:00 AM", "sub": "Session 2 subject - edit if needed"}, {"s": 3, "t": "11:00 AM - 12:00 PM", "sub": "Session 3 subject - edit if needed"}, {"s": 4, "t": "12:30 PM - 1:30 PM", "sub": "Session 4 subject - edit if needed"}, {"s": 5, "t": "1:30 PM - 2:30 PM", "sub": "Session 5 subject - edit if needed"}, {"s": 6, "t": "2:30 PM - 3:30 PM", "sub": "Session 6 subject - edit if needed"}], "TUE": [{"s": 1, "t": "8:45 AM - 9:45 AM", "sub": "Session 1 subject - edit if needed"}, {"s": 2, "t": "10:00 AM - 11:00 AM", "sub": "Session 2 subject - edit if needed"}, {"s": 3, "t": "11:00 AM - 12:00 PM", "sub": "Session 3 subject - edit if needed"}, {"s": 4, "t": "12:30 PM - 1:30 PM", "sub": "Session 4 subject - edit if needed"}, {"s": 5, "t": "1:30 PM - 2:30 PM", "sub": "Session 5 subject - edit if needed"}, {"s": 6, "t": "2:30 PM - 3:30 PM", "sub": "Session 6 subject - edit if needed"}], "WED": [{"s": 1, "t": "8:45 AM - 9:45 AM", "sub": "Session 1 subject - edit if needed"}, {"s": 2, "t": "10:00 AM - 11:00 AM", "sub": "Session 2 subject - edit if needed"}, {"s": 3, "t": "11:00 AM - 12:00 PM", "sub": "Session 3 subject - edit if needed"}, {"s": 4, "t": "12:30 PM - 1:30 PM", "sub": "Session 4 subject - edit if needed"}, {"s": 5, "t": "1:30 PM - 2:30 PM", "sub": "Session 5 subject - edit if needed"}, {"s": 6, "t": "2:30 PM - 3:30 PM", "sub": "Session 6 subject - edit if needed"}], "THUR": [{"s": 1, "t": "8:45 AM - 9:45 AM", "sub": "Session 1 subject - edit if needed"}, {"s": 2, "t": "10:00 AM - 11:00 AM", "sub": "Session 2 subject - edit if needed"}, {"s": 3, "t": "11:00 AM - 12:00 PM", "sub": "Session 3 subject - edit if needed"}, {"s": 4, "t": "12:30 PM - 1:30 PM", "sub": "Session 4 subject - edit if needed"}, {"s": 5, "t": "1:30 PM - 2:30 PM", "sub": "Session 5 subject - edit if needed"}, {"s": 6, "t": "2:30 PM - 3:30 PM", "sub": "Session 6 subject - edit if needed"}], "FRI": [{"s": 1, "t": "8:45 AM - 9:45 AM", "sub": "Session 1 subject - edit if needed"}, {"s": 2, "t": "10:00 AM - 11:00 AM", "sub": "Session 2 subject - edit if needed"}, {"s": 3, "t": "11:00 AM - 12:00 PM", "sub": "Session 3 subject - edit if needed"}, {"s": 4, "t": "12:30 PM - 1:30 PM", "sub": "Session 4 subject - edit if needed"}, {"s": 5, "t": "1:30 PM - 2:30 PM", "sub": "Session 5 subject - edit if needed"}, {"s": 6, "t": "2:30 PM - 3:30 PM", "sub": "Session 6 subject - edit if needed"}]}, "EYP 2": {"MON": [{"s": 1, "t": "8:45 AM - 9:45 AM", "sub": "Session 1 subject - edit if needed"}, {"s": 2, "t": "10:00 AM - 11:00 AM", "sub": "Session 2 subject - edit if needed"}, {"s": 3, "t": "11:00 AM - 12:00 PM", "sub": "Session 3 subject - edit if needed"}, {"s": 4, "t": "12:30 PM - 1:30 PM", "sub": "Session 4 subject - edit if needed"}, {"s": 5, "t": "1:30 PM - 2:30 PM", "sub": "Session 5 subject - edit if needed"}, {"s": 6, "t": "2:30 PM - 3:30 PM", "sub": "Session 6 subject - edit if needed"}], "TUE": [{"s": 1, "t": "8:45 AM - 9:45 AM", "sub": "Session 1 subject - edit if needed"}, {"s": 2, "t": "10:00 AM - 11:00 AM", "sub": "Session 2 subject - edit if needed"}, {"s": 3, "t": "11:00 AM - 12:00 PM", "sub": "Session 3 subject - edit if needed"}, {"s": 4, "t": "12:30 PM - 1:30 PM", "sub": "Session 4 subject - edit if needed"}, {"s": 5, "t": "1:30 PM - 2:30 PM", "sub": "Session 5 subject - edit if needed"}, {"s": 6, "t": "2:30 PM - 3:30 PM", "sub": "Session 6 subject - edit if needed"}], "WED": [{"s": 1, "t": "8:45 AM - 9:45 AM", "sub": "Session 1 subject - edit if needed"}, {"s": 2, "t": "10:00 AM - 11:00 AM", "sub": "Session 2 subject - edit if needed"}, {"s": 3, "t": "11:00 AM - 12:00 PM", "sub": "Session 3 subject - edit if needed"}, {"s": 4, "t": "12:30 PM - 1:30 PM", "sub": "Session 4 subject - edit if needed"}, {"s": 5, "t": "1:30 PM - 2:30 PM", "sub": "Session 5 subject - edit if needed"}, {"s": 6, "t": "2:30 PM - 3:30 PM", "sub": "Session 6 subject - edit if needed"}], "THUR": [{"s": 1, "t": "8:45 AM - 9:45 AM", "sub": "Session 1 subject - edit if needed"}, {"s": 2, "t": "10:00 AM - 11:00 AM", "sub": "Session 2 subject - edit if needed"}, {"s": 3, "t": "11:00 AM - 12:00 PM", "sub": "Session 3 subject - edit if needed"}, {"s": 4, "t": "12:30 PM - 1:30 PM", "sub": "Session 4 subject - edit if needed"}, {"s": 5, "t": "1:30 PM - 2:30 PM", "sub": "Session 5 subject - edit if needed"}, {"s": 6, "t": "2:30 PM - 3:30 PM", "sub": "Session 6 subject - edit if needed"}], "FRI": [{"s": 1, "t": "8:45 AM - 9:45 AM", "sub": "Session 1 subject - edit if needed"}, {"s": 2, "t": "10:00 AM - 11:00 AM", "sub": "Session 2 subject - edit if needed"}, {"s": 3, "t": "11:00 AM - 12:00 PM", "sub": "Session 3 subject - edit if needed"}, {"s": 4, "t": "12:30 PM - 1:30 PM", "sub": "Session 4 subject - edit if needed"}, {"s": 5, "t": "1:30 PM - 2:30 PM", "sub": "Session 5 subject - edit if needed"}, {"s": 6, "t": "2:30 PM - 3:30 PM", "sub": "Session 6 subject - edit if needed"}]}, "EYP 3": {"MON": [{"s": 1, "t": "8:45 AM - 9:45 AM", "sub": "Session 1 subject - edit if needed"}, {"s": 2, "t": "10:00 AM - 11:00 AM", "sub": "Session 2 subject - edit if needed"}, {"s": 3, "t": "11:00 AM - 12:00 PM", "sub": "Session 3 subject - edit if needed"}, {"s": 4, "t": "12:30 PM - 1:30 PM", "sub": "Session 4 subject - edit if needed"}, {"s": 5, "t": "1:30 PM - 2:30 PM", "sub": "Session 5 subject - edit if needed"}, {"s": 6, "t": "2:30 PM - 3:30 PM", "sub": "Session 6 subject - edit if needed"}], "TUE": [{"s": 1, "t": "8:45 AM - 9:45 AM", "sub": "Session 1 subject - edit if needed"}, {"s": 2, "t": "10:00 AM - 11:00 AM", "sub": "Session 2 subject - edit if needed"}, {"s": 3, "t": "11:00 AM - 12:00 PM", "sub": "Session 3 subject - edit if needed"}, {"s": 4, "t": "12:30 PM - 1:30 PM", "sub": "Session 4 subject - edit if needed"}, {"s": 5, "t": "1:30 PM - 2:30 PM", "sub": "Session 5 subject - edit if needed"}, {"s": 6, "t": "2:30 PM - 3:30 PM", "sub": "Session 6 subject - edit if needed"}], "WED": [{"s": 1, "t": "8:45 AM - 9:45 AM", "sub": "Session 1 subject - edit if needed"}, {"s": 2, "t": "10:00 AM - 11:00 AM", "sub": "Session 2 subject - edit if needed"}, {"s": 3, "t": "11:00 AM - 12:00 PM", "sub": "Session 3 subject - edit if needed"}, {"s": 4, "t": "12:30 PM - 1:30 PM", "sub": "Session 4 subject - edit if needed"}, {"s": 5, "t": "1:30 PM - 2:30 PM", "sub": "Session 5 subject - edit if needed"}, {"s": 6, "t": "2:30 PM - 3:30 PM", "sub": "Session 6 subject - edit if needed"}], "THUR": [{"s": 1, "t": "8:45 AM - 9:45 AM", "sub": "Session 1 subject - edit if needed"}, {"s": 2, "t": "10:00 AM - 11:00 AM", "sub": "Session 2 subject - edit if needed"}, {"s": 3, "t": "11:00 AM - 12:00 PM", "sub": "Session 3 subject - edit if needed"}, {"s": 4, "t": "12:30 PM - 1:30 PM", "sub": "Session 4 subject - edit if needed"}, {"s": 5, "t": "1:30 PM - 2:30 PM", "sub": "Session 5 subject - edit if needed"}, {"s": 6, "t": "2:30 PM - 3:30 PM", "sub": "Session 6 subject - edit if needed"}], "FRI": [{"s": 1, "t": "8:45 AM - 9:45 AM", "sub": "Session 1 subject - edit if needed"}, {"s": 2, "t": "10:00 AM - 11:00 AM", "sub": "Session 2 subject - edit if needed"}, {"s": 3, "t": "11:00 AM - 12:00 PM", "sub": "Session 3 subject - edit if needed"}, {"s": 4, "t": "12:30 PM - 1:30 PM", "sub": "Session 4 subject - edit if needed"}, {"s": 5, "t": "1:30 PM - 2:30 PM", "sub": "Session 5 subject - edit if needed"}, {"s": 6, "t": "2:30 PM - 3:30 PM", "sub": "Session 6 subject - edit if needed"}]}, "PYP 1": {"MON": [{"s": 1, "t": "8:45 AM - 9:45 AM", "sub": "Session 1 subject - edit if needed"}, {"s": 2, "t": "10:00 AM - 11:00 AM", "sub": "Session 2 subject - edit if needed"}, {"s": 3, "t": "11:00 AM - 12:00 PM", "sub": "Session 3 subject - edit if needed"}, {"s": 4, "t": "12:30 PM - 1:30 PM", "sub": "Session 4 subject - edit if needed"}, {"s": 5, "t": "1:30 PM - 2:30 PM", "sub": "Session 5 subject - edit if needed"}, {"s": 6, "t": "2:30 PM - 3:30 PM", "sub": "Session 6 subject - edit if needed"}], "TUE": [{"s": 1, "t": "8:45 AM - 9:45 AM", "sub": "Session 1 subject - edit if needed"}, {"s": 2, "t": "10:00 AM - 11:00 AM", "sub": "Session 2 subject - edit if needed"}, {"s": 3, "t": "11:00 AM - 12:00 PM", "sub": "Session 3 subject - edit if needed"}, {"s": 4, "t": "12:30 PM - 1:30 PM", "sub": "Session 4 subject - edit if needed"}, {"s": 5, "t": "1:30 PM - 2:30 PM", "sub": "Session 5 subject - edit if needed"}, {"s": 6, "t": "2:30 PM - 3:30 PM", "sub": "Session 6 subject - edit if needed"}], "WED": [{"s": 1, "t": "8:45 AM - 9:45 AM", "sub": "Session 1 subject - edit if needed"}, {"s": 2, "t": "10:00 AM - 11:00 AM", "sub": "Session 2 subject - edit if needed"}, {"s": 3, "t": "11:00 AM - 12:00 PM", "sub": "Session 3 subject - edit if needed"}, {"s": 4, "t": "12:30 PM - 1:30 PM", "sub": "Session 4 subject - edit if needed"}, {"s": 5, "t": "1:30 PM - 2:30 PM", "sub": "Session 5 subject - edit if needed"}, {"s": 6, "t": "2:30 PM - 3:30 PM", "sub": "Session 6 subject - edit if needed"}], "THUR": [{"s": 1, "t": "8:45 AM - 9:45 AM", "sub": "Session 1 subject - edit if needed"}, {"s": 2, "t": "10:00 AM - 11:00 AM", "sub": "Session 2 subject - edit if needed"}, {"s": 3, "t": "11:00 AM - 12:00 PM", "sub": "Session 3 subject - edit if needed"}, {"s": 4, "t": "12:30 PM - 1:30 PM", "sub": "Session 4 subject - edit if needed"}, {"s": 5, "t": "1:30 PM - 2:30 PM", "sub": "Session 5 subject - edit if needed"}, {"s": 6, "t": "2:30 PM - 3:30 PM", "sub": "Session 6 subject - edit if needed"}], "FRI": [{"s": 1, "t": "8:45 AM - 9:45 AM", "sub": "Session 1 subject - edit if needed"}, {"s": 2, "t": "10:00 AM - 11:00 AM", "sub": "Session 2 subject - edit if needed"}, {"s": 3, "t": "11:00 AM - 12:00 PM", "sub": "Session 3 subject - edit if needed"}, {"s": 4, "t": "12:30 PM - 1:30 PM", "sub": "Session 4 subject - edit if needed"}, {"s": 5, "t": "1:30 PM - 2:30 PM", "sub": "Session 5 subject - edit if needed"}, {"s": 6, "t": "2:30 PM - 3:30 PM", "sub": "Session 6 subject - edit if needed"}]}, "PYP 2": {"MON": [{"s": 1, "t": "8:45 AM - 9:45 AM", "sub": "Session 1 subject - edit if needed"}, {"s": 2, "t": "10:00 AM - 11:00 AM", "sub": "Session 2 subject - edit if needed"}, {"s": 3, "t": "11:00 AM - 12:00 PM", "sub": "Session 3 subject - edit if needed"}, {"s": 4, "t": "12:30 PM - 1:30 PM", "sub": "Session 4 subject - edit if needed"}, {"s": 5, "t": "1:30 PM - 2:30 PM", "sub": "Session 5 subject - edit if needed"}, {"s": 6, "t": "2:30 PM - 3:30 PM", "sub": "Session 6 subject - edit if needed"}], "TUE": [{"s": 1, "t": "8:45 AM - 9:45 AM", "sub": "Session 1 subject - edit if needed"}, {"s": 2, "t": "10:00 AM - 11:00 AM", "sub": "Session 2 subject - edit if needed"}, {"s": 3, "t": "11:00 AM - 12:00 PM", "sub": "Session 3 subject - edit if needed"}, {"s": 4, "t": "12:30 PM - 1:30 PM", "sub": "Session 4 subject - edit if needed"}, {"s": 5, "t": "1:30 PM - 2:30 PM", "sub": "Session 5 subject - edit if needed"}, {"s": 6, "t": "2:30 PM - 3:30 PM", "sub": "Session 6 subject - edit if needed"}], "WED": [{"s": 1, "t": "8:45 AM - 9:45 AM", "sub": "Session 1 subject - edit if needed"}, {"s": 2, "t": "10:00 AM - 11:00 AM", "sub": "Session 2 subject - edit if needed"}, {"s": 3, "t": "11:00 AM - 12:00 PM", "sub": "Session 3 subject - edit if needed"}, {"s": 4, "t": "12:30 PM - 1:30 PM", "sub": "Session 4 subject - edit if needed"}, {"s": 5, "t": "1:30 PM - 2:30 PM", "sub": "Session 5 subject - edit if needed"}, {"s": 6, "t": "2:30 PM - 3:30 PM", "sub": "Session 6 subject - edit if needed"}], "THUR": [{"s": 1, "t": "8:45 AM - 9:45 AM", "sub": "Session 1 subject - edit if needed"}, {"s": 2, "t": "10:00 AM - 11:00 AM", "sub": "Session 2 subject - edit if needed"}, {"s": 3, "t": "11:00 AM - 12:00 PM", "sub": "Session 3 subject - edit if needed"}, {"s": 4, "t": "12:30 PM - 1:30 PM", "sub": "Session 4 subject - edit if needed"}, {"s": 5, "t": "1:30 PM - 2:30 PM", "sub": "Session 5 subject - edit if needed"}, {"s": 6, "t": "2:30 PM - 3:30 PM", "sub": "Session 6 subject - edit if needed"}], "FRI": [{"s": 1, "t": "8:45 AM - 9:45 AM", "sub": "Session 1 subject - edit if needed"}, {"s": 2, "t": "10:00 AM - 11:00 AM", "sub": "Session 2 subject - edit if needed"}, {"s": 3, "t": "11:00 AM - 12:00 PM", "sub": "Session 3 subject - edit if needed"}, {"s": 4, "t": "12:30 PM - 1:30 PM", "sub": "Session 4 subject - edit if needed"}, {"s": 5, "t": "1:30 PM - 2:30 PM", "sub": "Session 5 subject - edit if needed"}, {"s": 6, "t": "2:30 PM - 3:30 PM", "sub": "Session 6 subject - edit if needed"}]}, "PYP 3": {"MON": [{"s": 1, "t": "8:45 AM - 9:45 AM", "sub": "Session 1 subject - edit if needed"}, {"s": 2, "t": "10:00 AM - 11:00 AM", "sub": "Session 2 subject - edit if needed"}, {"s": 3, "t": "11:00 AM - 12:00 PM", "sub": "Session 3 subject - edit if needed"}, {"s": 4, "t": "12:30 PM - 1:30 PM", "sub": "Session 4 subject - edit if needed"}, {"s": 5, "t": "1:30 PM - 2:30 PM", "sub": "Session 5 subject - edit if needed"}, {"s": 6, "t": "2:30 PM - 3:30 PM", "sub": "Session 6 subject - edit if needed"}], "TUE": [{"s": 1, "t": "8:45 AM - 9:45 AM", "sub": "Session 1 subject - edit if needed"}, {"s": 2, "t": "10:00 AM - 11:00 AM", "sub": "Session 2 subject - edit if needed"}, {"s": 3, "t": "11:00 AM - 12:00 PM", "sub": "Session 3 subject - edit if needed"}, {"s": 4, "t": "12:30 PM - 1:30 PM", "sub": "Session 4 subject - edit if needed"}, {"s": 5, "t": "1:30 PM - 2:30 PM", "sub": "Session 5 subject - edit if needed"}, {"s": 6, "t": "2:30 PM - 3:30 PM", "sub": "Session 6 subject - edit if needed"}], "WED": [{"s": 1, "t": "8:45 AM - 9:45 AM", "sub": "Session 1 subject - edit if needed"}, {"s": 2, "t": "10:00 AM - 11:00 AM", "sub": "Session 2 subject - edit if needed"}, {"s": 3, "t": "11:00 AM - 12:00 PM", "sub": "Session 3 subject - edit if needed"}, {"s": 4, "t": "12:30 PM - 1:30 PM", "sub": "Session 4 subject - edit if needed"}, {"s": 5, "t": "1:30 PM - 2:30 PM", "sub": "Session 5 subject - edit if needed"}, {"s": 6, "t": "2:30 PM - 3:30 PM", "sub": "Session 6 subject - edit if needed"}], "THUR": [{"s": 1, "t": "8:45 AM - 9:45 AM", "sub": "Session 1 subject - edit if needed"}, {"s": 2, "t": "10:00 AM - 11:00 AM", "sub": "Session 2 subject - edit if needed"}, {"s": 3, "t": "11:00 AM - 12:00 PM", "sub": "Session 3 subject - edit if needed"}, {"s": 4, "t": "12:30 PM - 1:30 PM", "sub": "Session 4 subject - edit if needed"}, {"s": 5, "t": "1:30 PM - 2:30 PM", "sub": "Session 5 subject - edit if needed"}, {"s": 6, "t": "2:30 PM - 3:30 PM", "sub": "Session 6 subject - edit if needed"}], "FRI": [{"s": 1, "t": "8:45 AM - 9:45 AM", "sub": "Session 1 subject - edit if needed"}, {"s": 2, "t": "10:00 AM - 11:00 AM", "sub": "Session 2 subject - edit if needed"}, {"s": 3, "t": "11:00 AM - 12:00 PM", "sub": "Session 3 subject - edit if needed"}, {"s": 4, "t": "12:30 PM - 1:30 PM", "sub": "Session 4 subject - edit if needed"}, {"s": 5, "t": "1:30 PM - 2:30 PM", "sub": "Session 5 subject - edit if needed"}, {"s": 6, "t": "2:30 PM - 3:30 PM", "sub": "Session 6 subject - edit if needed"}]}, "PYP 4": {"MON": [{"s": 1, "t": "8:45 AM - 9:45 AM", "sub": "Session 1 subject - edit if needed"}, {"s": 2, "t": "10:00 AM - 11:00 AM", "sub": "Session 2 subject - edit if needed"}, {"s": 3, "t": "11:00 AM - 12:00 PM", "sub": "Session 3 subject - edit if needed"}, {"s": 4, "t": "12:30 PM - 1:30 PM", "sub": "Session 4 subject - edit if needed"}, {"s": 5, "t": "1:30 PM - 2:30 PM", "sub": "Session 5 subject - edit if needed"}, {"s": 6, "t": "2:30 PM - 3:30 PM", "sub": "Session 6 subject - edit if needed"}], "TUE": [{"s": 1, "t": "8:45 AM - 9:45 AM", "sub": "Session 1 subject - edit if needed"}, {"s": 2, "t": "10:00 AM - 11:00 AM", "sub": "Session 2 subject - edit if needed"}, {"s": 3, "t": "11:00 AM - 12:00 PM", "sub": "Session 3 subject - edit if needed"}, {"s": 4, "t": "12:30 PM - 1:30 PM", "sub": "Session 4 subject - edit if needed"}, {"s": 5, "t": "1:30 PM - 2:30 PM", "sub": "Session 5 subject - edit if needed"}, {"s": 6, "t": "2:30 PM - 3:30 PM", "sub": "Session 6 subject - edit if needed"}], "WED": [{"s": 1, "t": "8:45 AM - 9:45 AM", "sub": "Session 1 subject - edit if needed"}, {"s": 2, "t": "10:00 AM - 11:00 AM", "sub": "Session 2 subject - edit if needed"}, {"s": 3, "t": "11:00 AM - 12:00 PM", "sub": "Session 3 subject - edit if needed"}, {"s": 4, "t": "12:30 PM - 1:30 PM", "sub": "Session 4 subject - edit if needed"}, {"s": 5, "t": "1:30 PM - 2:30 PM", "sub": "Session 5 subject - edit if needed"}, {"s": 6, "t": "2:30 PM - 3:30 PM", "sub": "Session 6 subject - edit if needed"}], "THUR": [{"s": 1, "t": "8:45 AM - 9:45 AM", "sub": "Session 1 subject - edit if needed"}, {"s": 2, "t": "10:00 AM - 11:00 AM", "sub": "Session 2 subject - edit if needed"}, {"s": 3, "t": "11:00 AM - 12:00 PM", "sub": "Session 3 subject - edit if needed"}, {"s": 4, "t": "12:30 PM - 1:30 PM", "sub": "Session 4 subject - edit if needed"}, {"s": 5, "t": "1:30 PM - 2:30 PM", "sub": "Session 5 subject - edit if needed"}, {"s": 6, "t": "2:30 PM - 3:30 PM", "sub": "Session 6 subject - edit if needed"}], "FRI": [{"s": 1, "t": "8:45 AM - 9:45 AM", "sub": "Session 1 subject - edit if needed"}, {"s": 2, "t": "10:00 AM - 11:00 AM", "sub": "Session 2 subject - edit if needed"}, {"s": 3, "t": "11:00 AM - 12:00 PM", "sub": "Session 3 subject - edit if needed"}, {"s": 4, "t": "12:30 PM - 1:30 PM", "sub": "Session 4 subject - edit if needed"}, {"s": 5, "t": "1:30 PM - 2:30 PM", "sub": "Session 5 subject - edit if needed"}, {"s": 6, "t": "2:30 PM - 3:30 PM", "sub": "Session 6 subject - edit if needed"}]}, "PYP 5": {"MON": [{"s": 1, "t": "8:45 AM - 9:45 AM", "sub": "Session 1 subject - edit if needed"}, {"s": 2, "t": "10:00 AM - 11:00 AM", "sub": "Session 2 subject - edit if needed"}, {"s": 3, "t": "11:00 AM - 12:00 PM", "sub": "Session 3 subject - edit if needed"}, {"s": 4, "t": "12:30 PM - 1:30 PM", "sub": "Session 4 subject - edit if needed"}, {"s": 5, "t": "1:30 PM - 2:30 PM", "sub": "Session 5 subject - edit if needed"}, {"s": 6, "t": "2:30 PM - 3:30 PM", "sub": "Session 6 subject - edit if needed"}], "TUE": [{"s": 1, "t": "8:45 AM - 9:45 AM", "sub": "Session 1 subject - edit if needed"}, {"s": 2, "t": "10:00 AM - 11:00 AM", "sub": "Session 2 subject - edit if needed"}, {"s": 3, "t": "11:00 AM - 12:00 PM", "sub": "Session 3 subject - edit if needed"}, {"s": 4, "t": "12:30 PM - 1:30 PM", "sub": "Session 4 subject - edit if needed"}, {"s": 5, "t": "1:30 PM - 2:30 PM", "sub": "Session 5 subject - edit if needed"}, {"s": 6, "t": "2:30 PM - 3:30 PM", "sub": "Session 6 subject - edit if needed"}], "WED": [{"s": 1, "t": "8:45 AM - 9:45 AM", "sub": "Session 1 subject - edit if needed"}, {"s": 2, "t": "10:00 AM - 11:00 AM", "sub": "Session 2 subject - edit if needed"}, {"s": 3, "t": "11:00 AM - 12:00 PM", "sub": "Session 3 subject - edit if needed"}, {"s": 4, "t": "12:30 PM - 1:30 PM", "sub": "Session 4 subject - edit if needed"}, {"s": 5, "t": "1:30 PM - 2:30 PM", "sub": "Session 5 subject - edit if needed"}, {"s": 6, "t": "2:30 PM - 3:30 PM", "sub": "Session 6 subject - edit if needed"}], "THUR": [{"s": 1, "t": "8:45 AM - 9:45 AM", "sub": "Session 1 subject - edit if needed"}, {"s": 2, "t": "10:00 AM - 11:00 AM", "sub": "Session 2 subject - edit if needed"}, {"s": 3, "t": "11:00 AM - 12:00 PM", "sub": "Session 3 subject - edit if needed"}, {"s": 4, "t": "12:30 PM - 1:30 PM", "sub": "Session 4 subject - edit if needed"}, {"s": 5, "t": "1:30 PM - 2:30 PM", "sub": "Session 5 subject - edit if needed"}, {"s": 6, "t": "2:30 PM - 3:30 PM", "sub": "Session 6 subject - edit if needed"}], "FRI": [{"s": 1, "t": "8:45 AM - 9:45 AM", "sub": "Session 1 subject - edit if needed"}, {"s": 2, "t": "10:00 AM - 11:00 AM", "sub": "Session 2 subject - edit if needed"}, {"s": 3, "t": "11:00 AM - 12:00 PM", "sub": "Session 3 subject - edit if needed"}, {"s": 4, "t": "12:30 PM - 1:30 PM", "sub": "Session 4 subject - edit if needed"}, {"s": 5, "t": "1:30 PM - 2:30 PM", "sub": "Session 5 subject - edit if needed"}, {"s": 6, "t": "2:30 PM - 3:30 PM", "sub": "Session 6 subject - edit if needed"}]}, "MYP 4": {"MON": [{"s": 1, "t": "8:45 AM - 9:45 AM", "sub": "Session 1 subject - edit if needed"}, {"s": 2, "t": "10:00 AM - 11:00 AM", "sub": "Session 2 subject - edit if needed"}, {"s": 3, "t": "11:00 AM - 12:00 PM", "sub": "Session 3 subject - edit if needed"}, {"s": 4, "t": "12:30 PM - 1:30 PM", "sub": "Session 4 subject - edit if needed"}, {"s": 5, "t": "1:30 PM - 2:30 PM", "sub": "Session 5 subject - edit if needed"}, {"s": 6, "t": "2:30 PM - 3:30 PM", "sub": "Session 6 subject - edit if needed"}], "TUE": [{"s": 1, "t": "8:45 AM - 9:45 AM", "sub": "Session 1 subject - edit if needed"}, {"s": 2, "t": "10:00 AM - 11:00 AM", "sub": "Session 2 subject - edit if needed"}, {"s": 3, "t": "11:00 AM - 12:00 PM", "sub": "Session 3 subject - edit if needed"}, {"s": 4, "t": "12:30 PM - 1:30 PM", "sub": "Session 4 subject - edit if needed"}, {"s": 5, "t": "1:30 PM - 2:30 PM", "sub": "Session 5 subject - edit if needed"}, {"s": 6, "t": "2:30 PM - 3:30 PM", "sub": "Session 6 subject - edit if needed"}], "WED": [{"s": 1, "t": "8:45 AM - 9:45 AM", "sub": "Session 1 subject - edit if needed"}, {"s": 2, "t": "10:00 AM - 11:00 AM", "sub": "Session 2 subject - edit if needed"}, {"s": 3, "t": "11:00 AM - 12:00 PM", "sub": "Session 3 subject - edit if needed"}, {"s": 4, "t": "12:30 PM - 1:30 PM", "sub": "Session 4 subject - edit if needed"}, {"s": 5, "t": "1:30 PM - 2:30 PM", "sub": "Session 5 subject - edit if needed"}, {"s": 6, "t": "2:30 PM - 3:30 PM", "sub": "Session 6 subject - edit if needed"}], "THUR": [{"s": 1, "t": "8:45 AM - 9:45 AM", "sub": "Session 1 subject - edit if needed"}, {"s": 2, "t": "10:00 AM - 11:00 AM", "sub": "Session 2 subject - edit if needed"}, {"s": 3, "t": "11:00 AM - 12:00 PM", "sub": "Session 3 subject - edit if needed"}, {"s": 4, "t": "12:30 PM - 1:30 PM", "sub": "Session 4 subject - edit if needed"}, {"s": 5, "t": "1:30 PM - 2:30 PM", "sub": "Session 5 subject - edit if needed"}, {"s": 6, "t": "2:30 PM - 3:30 PM", "sub": "Session 6 subject - edit if needed"}], "FRI": [{"s": 1, "t": "8:45 AM - 9:45 AM", "sub": "Session 1 subject - edit if needed"}, {"s": 2, "t": "10:00 AM - 11:00 AM", "sub": "Session 2 subject - edit if needed"}, {"s": 3, "t": "11:00 AM - 12:00 PM", "sub": "Session 3 subject - edit if needed"}, {"s": 4, "t": "12:30 PM - 1:30 PM", "sub": "Session 4 subject - edit if needed"}, {"s": 5, "t": "1:30 PM - 2:30 PM", "sub": "Session 5 subject - edit if needed"}, {"s": 6, "t": "2:30 PM - 3:30 PM", "sub": "Session 6 subject - edit if needed"}]}, "MYP 5": {"MON": [{"s": 1, "t": "8:45 AM - 9:45 AM", "sub": "Session 1 subject - edit if needed"}, {"s": 2, "t": "10:00 AM - 11:00 AM", "sub": "Session 2 subject - edit if needed"}, {"s": 3, "t": "11:00 AM - 12:00 PM", "sub": "Session 3 subject - edit if needed"}, {"s": 4, "t": "12:30 PM - 1:30 PM", "sub": "Session 4 subject - edit if needed"}, {"s": 5, "t": "1:30 PM - 2:30 PM", "sub": "Session 5 subject - edit if needed"}, {"s": 6, "t": "2:30 PM - 3:30 PM", "sub": "Session 6 subject - edit if needed"}], "TUE": [{"s": 1, "t": "8:45 AM - 9:45 AM", "sub": "Session 1 subject - edit if needed"}, {"s": 2, "t": "10:00 AM - 11:00 AM", "sub": "Session 2 subject - edit if needed"}, {"s": 3, "t": "11:00 AM - 12:00 PM", "sub": "Session 3 subject - edit if needed"}, {"s": 4, "t": "12:30 PM - 1:30 PM", "sub": "Session 4 subject - edit if needed"}, {"s": 5, "t": "1:30 PM - 2:30 PM", "sub": "Session 5 subject - edit if needed"}, {"s": 6, "t": "2:30 PM - 3:30 PM", "sub": "Session 6 subject - edit if needed"}], "WED": [{"s": 1, "t": "8:45 AM - 9:45 AM", "sub": "Session 1 subject - edit if needed"}, {"s": 2, "t": "10:00 AM - 11:00 AM", "sub": "Session 2 subject - edit if needed"}, {"s": 3, "t": "11:00 AM - 12:00 PM", "sub": "Session 3 subject - edit if needed"}, {"s": 4, "t": "12:30 PM - 1:30 PM", "sub": "Session 4 subject - edit if needed"}, {"s": 5, "t": "1:30 PM - 2:30 PM", "sub": "Session 5 subject - edit if needed"}, {"s": 6, "t": "2:30 PM - 3:30 PM", "sub": "Session 6 subject - edit if needed"}], "THUR": [{"s": 1, "t": "8:45 AM - 9:45 AM", "sub": "Session 1 subject - edit if needed"}, {"s": 2, "t": "10:00 AM - 11:00 AM", "sub": "Session 2 subject - edit if needed"}, {"s": 3, "t": "11:00 AM - 12:00 PM", "sub": "Session 3 subject - edit if needed"}, {"s": 4, "t": "12:30 PM - 1:30 PM", "sub": "Session 4 subject - edit if needed"}, {"s": 5, "t": "1:30 PM - 2:30 PM", "sub": "Session 5 subject - edit if needed"}, {"s": 6, "t": "2:30 PM - 3:30 PM", "sub": "Session 6 subject - edit if needed"}], "FRI": [{"s": 1, "t": "8:45 AM - 9:45 AM", "sub": "Session 1 subject - edit if needed"}, {"s": 2, "t": "10:00 AM - 11:00 AM", "sub": "Session 2 subject - edit if needed"}, {"s": 3, "t": "11:00 AM - 12:00 PM", "sub": "Session 3 subject - edit if needed"}, {"s": 4, "t": "12:30 PM - 1:30 PM", "sub": "Session 4 subject - edit if needed"}, {"s": 5, "t": "1:30 PM - 2:30 PM", "sub": "Session 5 subject - edit if needed"}, {"s": 6, "t": "2:30 PM - 3:30 PM", "sub": "Session 6 subject - edit if needed"}]}, "DP 1": {"MON": [{"s": 1, "t": "8:45 AM - 9:45 AM", "sub": "Session 1 subject - edit if needed"}, {"s": 2, "t": "10:00 AM - 11:00 AM", "sub": "Session 2 subject - edit if needed"}, {"s": 3, "t": "11:00 AM - 12:00 PM", "sub": "Session 3 subject - edit if needed"}, {"s": 4, "t": "12:30 PM - 1:30 PM", "sub": "Session 4 subject - edit if needed"}, {"s": 5, "t": "1:30 PM - 2:30 PM", "sub": "Session 5 subject - edit if needed"}, {"s": 6, "t": "2:30 PM - 3:30 PM", "sub": "Session 6 subject - edit if needed"}], "TUE": [{"s": 1, "t": "8:45 AM - 9:45 AM", "sub": "Session 1 subject - edit if needed"}, {"s": 2, "t": "10:00 AM - 11:00 AM", "sub": "Session 2 subject - edit if needed"}, {"s": 3, "t": "11:00 AM - 12:00 PM", "sub": "Session 3 subject - edit if needed"}, {"s": 4, "t": "12:30 PM - 1:30 PM", "sub": "Session 4 subject - edit if needed"}, {"s": 5, "t": "1:30 PM - 2:30 PM", "sub": "Session 5 subject - edit if needed"}, {"s": 6, "t": "2:30 PM - 3:30 PM", "sub": "Session 6 subject - edit if needed"}], "WED": [{"s": 1, "t": "8:45 AM - 9:45 AM", "sub": "Session 1 subject - edit if needed"}, {"s": 2, "t": "10:00 AM - 11:00 AM", "sub": "Session 2 subject - edit if needed"}, {"s": 3, "t": "11:00 AM - 12:00 PM", "sub": "Session 3 subject - edit if needed"}, {"s": 4, "t": "12:30 PM - 1:30 PM", "sub": "Session 4 subject - edit if needed"}, {"s": 5, "t": "1:30 PM - 2:30 PM", "sub": "Session 5 subject - edit if needed"}, {"s": 6, "t": "2:30 PM - 3:30 PM", "sub": "Session 6 subject - edit if needed"}], "THUR": [{"s": 1, "t": "8:45 AM - 9:45 AM", "sub": "Session 1 subject - edit if needed"}, {"s": 2, "t": "10:00 AM - 11:00 AM", "sub": "Session 2 subject - edit if needed"}, {"s": 3, "t": "11:00 AM - 12:00 PM", "sub": "Session 3 subject - edit if needed"}, {"s": 4, "t": "12:30 PM - 1:30 PM", "sub": "Session 4 subject - edit if needed"}, {"s": 5, "t": "1:30 PM - 2:30 PM", "sub": "Session 5 subject - edit if needed"}, {"s": 6, "t": "2:30 PM - 3:30 PM", "sub": "Session 6 subject - edit if needed"}], "FRI": [{"s": 1, "t": "8:45 AM - 9:45 AM", "sub": "Session 1 subject - edit if needed"}, {"s": 2, "t": "10:00 AM - 11:00 AM", "sub": "Session 2 subject - edit if needed"}, {"s": 3, "t": "11:00 AM - 12:00 PM", "sub": "Session 3 subject - edit if needed"}, {"s": 4, "t": "12:30 PM - 1:30 PM", "sub": "Session 4 subject - edit if needed"}, {"s": 5, "t": "1:30 PM - 2:30 PM", "sub": "Session 5 subject - edit if needed"}, {"s": 6, "t": "2:30 PM - 3:30 PM", "sub": "Session 6 subject - edit if needed"}]}, "DP 2": {"MON": [{"s": 1, "t": "8:45 AM - 9:45 AM", "sub": "Session 1 subject - edit if needed"}, {"s": 2, "t": "10:00 AM - 11:00 AM", "sub": "Session 2 subject - edit if needed"}, {"s": 3, "t": "11:00 AM - 12:00 PM", "sub": "Session 3 subject - edit if needed"}, {"s": 4, "t": "12:30 PM - 1:30 PM", "sub": "Session 4 subject - edit if needed"}, {"s": 5, "t": "1:30 PM - 2:30 PM", "sub": "Session 5 subject - edit if needed"}, {"s": 6, "t": "2:30 PM - 3:30 PM", "sub": "Session 6 subject - edit if needed"}], "TUE": [{"s": 1, "t": "8:45 AM - 9:45 AM", "sub": "Session 1 subject - edit if needed"}, {"s": 2, "t": "10:00 AM - 11:00 AM", "sub": "Session 2 subject - edit if needed"}, {"s": 3, "t": "11:00 AM - 12:00 PM", "sub": "Session 3 subject - edit if needed"}, {"s": 4, "t": "12:30 PM - 1:30 PM", "sub": "Session 4 subject - edit if needed"}, {"s": 5, "t": "1:30 PM - 2:30 PM", "sub": "Session 5 subject - edit if needed"}, {"s": 6, "t": "2:30 PM - 3:30 PM", "sub": "Session 6 subject - edit if needed"}], "WED": [{"s": 1, "t": "8:45 AM - 9:45 AM", "sub": "Session 1 subject - edit if needed"}, {"s": 2, "t": "10:00 AM - 11:00 AM", "sub": "Session 2 subject - edit if needed"}, {"s": 3, "t": "11:00 AM - 12:00 PM", "sub": "Session 3 subject - edit if needed"}, {"s": 4, "t": "12:30 PM - 1:30 PM", "sub": "Session 4 subject - edit if needed"}, {"s": 5, "t": "1:30 PM - 2:30 PM", "sub": "Session 5 subject - edit if needed"}, {"s": 6, "t": "2:30 PM - 3:30 PM", "sub": "Session 6 subject - edit if needed"}], "THUR": [{"s": 1, "t": "8:45 AM - 9:45 AM", "sub": "Session 1 subject - edit if needed"}, {"s": 2, "t": "10:00 AM - 11:00 AM", "sub": "Session 2 subject - edit if needed"}, {"s": 3, "t": "11:00 AM - 12:00 PM", "sub": "Session 3 subject - edit if needed"}, {"s": 4, "t": "12:30 PM - 1:30 PM", "sub": "Session 4 subject - edit if needed"}, {"s": 5, "t": "1:30 PM - 2:30 PM", "sub": "Session 5 subject - edit if needed"}, {"s": 6, "t": "2:30 PM - 3:30 PM", "sub": "Session 6 subject - edit if needed"}], "FRI": [{"s": 1, "t": "8:45 AM - 9:45 AM", "sub": "Session 1 subject - edit if needed"}, {"s": 2, "t": "10:00 AM - 11:00 AM", "sub": "Session 2 subject - edit if needed"}, {"s": 3, "t": "11:00 AM - 12:00 PM", "sub": "Session 3 subject - edit if needed"}, {"s": 4, "t": "12:30 PM - 1:30 PM", "sub": "Session 4 subject - edit if needed"}, {"s": 5, "t": "1:30 PM - 2:30 PM", "sub": "Session 5 subject - edit if needed"}, {"s": 6, "t": "2:30 PM - 3:30 PM", "sub": "Session 6 subject - edit if needed"}]}};
+var GRADES = ["EYP 1 Omega", "EYP 2 Delta", "EYP 2 Omega", "EYP 3 Delta", "EYP 3 Omega", "PYP 1 Omega", "PYP 1B Delta", "PYP 1C Sigma", "PYP 2 Delta", "PYP 2 Omega", "PYP 3 Delta", "PYP 3 Omega", "PYP 4 Delta", "PYP 4 Omega", "PYP 5 Delta", "PYP 5 Omega", "MYP 1 Delta", "MYP 1 Omega", "MYP 2", "MYP 3", "MYP 4", "MYP 5", "DP 1", "DP 2"];
+var TIMETABLES = {
+  "EYP 1 Omega": {
+    "MON": [
+      {
+        "s": 0,
+        "t": "8:30 AM   - 8.45 AM",
+        "sub": "CIRCLE TIME"
+      },
+      {
+        "s": 1,
+        "t": "8.45 AM   – 9:45 AM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 2,
+        "t": "10:00 AM – 11:00 AM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 3,
+        "t": "11:00 AM – 12:00 PM",
+        "sub": "LITERACY-HRT"
+      },
+      {
+        "s": 4,
+        "t": "12:00 PM – 12:30 PM",
+        "sub": "MATH-HRT"
+      }
+    ],
+    "TUE": [
+      {
+        "s": 0,
+        "t": "8:30 AM   - 8.45 AM",
+        "sub": "CIRCLE TIME"
+      },
+      {
+        "s": 1,
+        "t": "8.45 AM   – 9:45 AM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 2,
+        "t": "10:00 AM – 11:00 AM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 3,
+        "t": "11:00 AM – 12:00 PM",
+        "sub": "VISUAL ARTS"
+      },
+      {
+        "s": 4,
+        "t": "12:00 PM – 12:30 PM",
+        "sub": "HRT TIME"
+      }
+    ],
+    "WED": [
+      {
+        "s": 0,
+        "t": "8:30 AM   - 8.45 AM",
+        "sub": "CIRCLE TIME"
+      },
+      {
+        "s": 1,
+        "t": "8.45 AM   – 9:45 AM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 2,
+        "t": "10:00 AM – 11:00 AM",
+        "sub": "DANCE/ Vocal"
+      },
+      {
+        "s": 3,
+        "t": "11:00 AM – 12:00 PM",
+        "sub": "PSPE-GEETHA"
+      },
+      {
+        "s": 4,
+        "t": "12:00 PM – 12:30 PM",
+        "sub": "LITERACY-HRT"
+      }
+    ],
+    "THUR": [
+      {
+        "s": 0,
+        "t": "8:30 AM   - 8.45 AM",
+        "sub": "CIRCLE TIME"
+      },
+      {
+        "s": 1,
+        "t": "8.45 AM   – 9:45 AM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 2,
+        "t": "10:00 AM – 11:00 AM",
+        "sub": "CONSTRUCTIVE PLAY-HRT"
+      },
+      {
+        "s": 3,
+        "t": "11:00 AM – 12:00 PM",
+        "sub": "MATH-HRT"
+      },
+      {
+        "s": 4,
+        "t": "12:00 PM – 12:30 PM",
+        "sub": "HRT TIME"
+      }
+    ],
+    "FRI": [
+      {
+        "s": 0,
+        "t": "8:30 AM   - 8.45 AM",
+        "sub": "CIRCLE TIME"
+      },
+      {
+        "s": 1,
+        "t": "8.45 AM   – 9:45 AM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 2,
+        "t": "10:00 AM – 11:00 AM",
+        "sub": "MATH-HRT"
+      },
+      {
+        "s": 3,
+        "t": "11:00 AM – 12:00 PM",
+        "sub": "READE SCAPE"
+      },
+      {
+        "s": 4,
+        "t": "12:00 PM – 12:30 PM",
+        "sub": "HRT TIME"
+      }
+    ]
+  },
+  "EYP 2 Delta": {
+    "MON": [
+      {
+        "s": 0,
+        "t": "8:30 AM   - 8.45 AM",
+        "sub": "CIRCLE TIME"
+      },
+      {
+        "s": 1,
+        "t": "8.45 AM   – 9:45 AM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 2,
+        "t": "10:00 AM – 11:00 AM",
+        "sub": "DANCE/ Vocal"
+      },
+      {
+        "s": 3,
+        "t": "11:00 AM – 12:00 PM",
+        "sub": "CONSTRUCTIVE PLAY-HRT"
+      },
+      {
+        "s": 4,
+        "t": "12:00 PM – 12:30 PM",
+        "sub": "LITERACY-HRT"
+      }
+    ],
+    "TUE": [
+      {
+        "s": 0,
+        "t": "8:30 AM   - 8.45 AM",
+        "sub": "CIRCLE TIME"
+      },
+      {
+        "s": 1,
+        "t": "8.45 AM   – 9:45 AM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 2,
+        "t": "10:00 AM – 11:00 AM",
+        "sub": "MATH-HRT"
+      },
+      {
+        "s": 3,
+        "t": "11:00 AM – 12:00 PM",
+        "sub": "PSPE-GEETHA"
+      },
+      {
+        "s": 4,
+        "t": "12:00 PM – 12:30 PM",
+        "sub": "HRT TIME"
+      }
+    ],
+    "WED": [
+      {
+        "s": 0,
+        "t": "8:30 AM   - 8.45 AM",
+        "sub": "CIRCLE TIME"
+      },
+      {
+        "s": 1,
+        "t": "8.45 AM   – 9:45 AM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 2,
+        "t": "10:00 AM – 11:00 AM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 3,
+        "t": "11:00 AM – 12:00 PM",
+        "sub": "VISUAL ARTS"
+      },
+      {
+        "s": 4,
+        "t": "12:00 PM – 12:30 PM",
+        "sub": "LITERACY-HRT"
+      }
+    ],
+    "THUR": [
+      {
+        "s": 0,
+        "t": "8:30 AM   - 8.45 AM",
+        "sub": "CIRCLE TIME"
+      },
+      {
+        "s": 1,
+        "t": "8.45 AM   – 9:45 AM",
+        "sub": "II Lang"
+      },
+      {
+        "s": 2,
+        "t": "10:00 AM – 11:00 AM",
+        "sub": "MATH-HRT"
+      },
+      {
+        "s": 3,
+        "t": "11:00 AM – 12:00 PM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 4,
+        "t": "12:00 PM – 12:30 PM",
+        "sub": "READE SCAPE"
+      }
+    ],
+    "FRI": [
+      {
+        "s": 0,
+        "t": "8:30 AM   - 8.45 AM",
+        "sub": "CIRCLE TIME"
+      },
+      {
+        "s": 1,
+        "t": "8.45 AM   – 9:45 AM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 2,
+        "t": "10:00 AM – 11:00 AM",
+        "sub": "II Lang"
+      },
+      {
+        "s": 3,
+        "t": "11:00 AM – 12:00 PM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 4,
+        "t": "12:00 PM – 12:30 PM",
+        "sub": "MATH-HRT"
+      }
+    ]
+  },
+  "EYP 2 Omega": {
+    "MON": [
+      {
+        "s": 0,
+        "t": "8:30 AM   - 8.45 AM",
+        "sub": "CIRCLE TIME"
+      },
+      {
+        "s": 1,
+        "t": "8.45 AM   – 9:45 AM",
+        "sub": "MATH-HRT"
+      },
+      {
+        "s": 2,
+        "t": "10:00 AM – 11:00 AM",
+        "sub": "DANCE/ Vocal"
+      },
+      {
+        "s": 3,
+        "t": "11:00 AM – 12:00 PM",
+        "sub": "LITERACY-HRT"
+      },
+      {
+        "s": 4,
+        "t": "12:00 PM – 12:30 PM",
+        "sub": "HRT TIME"
+      }
+    ],
+    "TUE": [
+      {
+        "s": 0,
+        "t": "8:30 AM   - 8.45 AM",
+        "sub": "CIRCLE TIME"
+      },
+      {
+        "s": 1,
+        "t": "8.45 AM   – 9:45 AM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 2,
+        "t": "10:00 AM – 11:00 AM",
+        "sub": "VISUAL ARTS"
+      },
+      {
+        "s": 3,
+        "t": "11:00 AM – 12:00 PM",
+        "sub": "MATH-HRT"
+      },
+      {
+        "s": 4,
+        "t": "12:00 PM – 12:30 PM",
+        "sub": "HRT TIME"
+      }
+    ],
+    "WED": [
+      {
+        "s": 0,
+        "t": "8:30 AM   - 8.45 AM",
+        "sub": "CIRCLE TIME"
+      },
+      {
+        "s": 1,
+        "t": "8.45 AM   – 9:45 AM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 2,
+        "t": "10:00 AM – 11:00 AM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 3,
+        "t": "11:00 AM – 12:00 PM",
+        "sub": "CONSTRUCTIVE PLAY-HRT"
+      },
+      {
+        "s": 4,
+        "t": "12:00 PM – 12:30 PM",
+        "sub": "READE SCAPE"
+      }
+    ],
+    "THUR": [
+      {
+        "s": 0,
+        "t": "8:30 AM   - 8.45 AM",
+        "sub": "CIRCLE TIME"
+      },
+      {
+        "s": 1,
+        "t": "8.45 AM   – 9:45 AM",
+        "sub": "II Lang"
+      },
+      {
+        "s": 2,
+        "t": "10:00 AM – 11:00 AM",
+        "sub": "MATH-HRT"
+      },
+      {
+        "s": 3,
+        "t": "11:00 AM – 12:00 PM",
+        "sub": "PSPE-GEETHA"
+      },
+      {
+        "s": 4,
+        "t": "12:00 PM – 12:30 PM",
+        "sub": "HRT TIME"
+      }
+    ],
+    "FRI": [
+      {
+        "s": 0,
+        "t": "8:30 AM   - 8.45 AM",
+        "sub": "CIRCLE TIME"
+      },
+      {
+        "s": 1,
+        "t": "8.45 AM   – 9:45 AM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 2,
+        "t": "10:00 AM – 11:00 AM",
+        "sub": "LITERACY-HRT"
+      },
+      {
+        "s": 3,
+        "t": "11:00 AM – 12:00 PM",
+        "sub": "II Lang"
+      },
+      {
+        "s": 4,
+        "t": "12:00 PM – 12:30 PM",
+        "sub": "HRT TIME"
+      }
+    ]
+  },
+  "EYP 3 Delta": {
+    "MON": [
+      {
+        "s": 0,
+        "t": "8:30 AM – 8:45 AM",
+        "sub": "CIRCLE TIME"
+      },
+      {
+        "s": 1,
+        "t": "8:45 AM – 9:45 AM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 2,
+        "t": "10:00 AM – 11:00 AM",
+        "sub": "MATH-HRT"
+      },
+      {
+        "s": 3,
+        "t": "11:00 AM – 12:00 PM",
+        "sub": "DANCE/ Vocal"
+      },
+      {
+        "s": 4,
+        "t": "12:30 PM- 1:30 PM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 5,
+        "t": "1:30 PM – 2:30 PM",
+        "sub": "II Lang"
+      },
+      {
+        "s": 6,
+        "t": "2:30 PM – 3:30 PM",
+        "sub": "HRT TIME"
+      }
+    ],
+    "TUE": [
+      {
+        "s": 0,
+        "t": "8:30 AM – 8:45 AM",
+        "sub": "CIRCLE TIME"
+      },
+      {
+        "s": 1,
+        "t": "8:45 AM – 9:45 AM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 2,
+        "t": "10:00 AM – 11:00 AM",
+        "sub": "LITERACY-HRT"
+      },
+      {
+        "s": 3,
+        "t": "11:00 AM – 12:00 PM",
+        "sub": "Brain Gym"
+      },
+      {
+        "s": 4,
+        "t": "12:30 PM- 1:30 PM",
+        "sub": "MATH-HRT"
+      },
+      {
+        "s": 5,
+        "t": "1:30 PM – 2:30 PM",
+        "sub": "READE SCAPE"
+      },
+      {
+        "s": 6,
+        "t": "2:30 PM – 3:30 PM",
+        "sub": "HRT TIME"
+      }
+    ],
+    "WED": [
+      {
+        "s": 0,
+        "t": "8:30 AM – 8:45 AM",
+        "sub": "CIRCLE TIME"
+      },
+      {
+        "s": 1,
+        "t": "8:45 AM – 9:45 AM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 2,
+        "t": "10:00 AM – 11:00 AM",
+        "sub": "Chess/Abacus"
+      },
+      {
+        "s": 3,
+        "t": "11:00 AM – 12:00 PM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 4,
+        "t": "12:30 PM- 1:30 PM",
+        "sub": "VISUAL ARTS"
+      },
+      {
+        "s": 5,
+        "t": "1:30 PM – 2:30 PM",
+        "sub": "CONSTRUCTIVE PLAY-HRT"
+      },
+      {
+        "s": 6,
+        "t": "2:30 PM – 3:30 PM",
+        "sub": "HRT TIME"
+      }
+    ],
+    "THUR": [
+      {
+        "s": 0,
+        "t": "8:30 AM – 8:45 AM",
+        "sub": "CIRCLE TIME"
+      },
+      {
+        "s": 1,
+        "t": "8:45 AM – 9:45 AM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 2,
+        "t": "10:00 AM – 11:00 AM",
+        "sub": "MATH-HRT"
+      },
+      {
+        "s": 3,
+        "t": "11:00 AM – 12:00 PM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 4,
+        "t": "12:30 PM- 1:30 PM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 5,
+        "t": "1:30 PM – 2:30 PM",
+        "sub": "II Lang"
+      },
+      {
+        "s": 6,
+        "t": "2:30 PM – 3:30 PM",
+        "sub": "CLUB"
+      }
+    ],
+    "FRI": [
+      {
+        "s": 0,
+        "t": "8:30 AM – 8:45 AM",
+        "sub": "CIRCLE TIME"
+      },
+      {
+        "s": 1,
+        "t": "8:45 AM – 9:45 AM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 2,
+        "t": "10:00 AM – 11:00 AM",
+        "sub": "Karate/ Silambam"
+      },
+      {
+        "s": 3,
+        "t": "11:00 AM – 12:00 PM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 4,
+        "t": "12:30 PM- 1:30 PM",
+        "sub": "II Lang"
+      },
+      {
+        "s": 5,
+        "t": "1:30 PM – 2:30 PM",
+        "sub": "PSPE-GEETHA"
+      },
+      {
+        "s": 6,
+        "t": "2:30 PM – 3:30 PM",
+        "sub": "HRT TIME"
+      }
+    ]
+  },
+  "EYP 3 Omega": {
+    "MON": [
+      {
+        "s": 0,
+        "t": "8:30 AM – 8:45 AM",
+        "sub": "CIRCLE TIME"
+      },
+      {
+        "s": 1,
+        "t": "8:45 AM – 9:45 AM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 2,
+        "t": "10:00 AM – 11:00 AM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 3,
+        "t": "11:00 AM – 12:00 PM",
+        "sub": "DANCE/ Vocal"
+      },
+      {
+        "s": 4,
+        "t": "12:30 PM- 1:30 PM",
+        "sub": "NUMBERS-HRT"
+      },
+      {
+        "s": 5,
+        "t": "1:30 PM – 2:30 PM",
+        "sub": "II Lang"
+      },
+      {
+        "s": 6,
+        "t": "2:30 PM – 3:30 PM",
+        "sub": "HRT TIME"
+      }
+    ],
+    "TUE": [
+      {
+        "s": 0,
+        "t": "8:30 AM – 8:45 AM",
+        "sub": "CIRCLE TIME"
+      },
+      {
+        "s": 1,
+        "t": "8:45 AM – 9:45 AM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 2,
+        "t": "10:00 AM – 11:00 AM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 3,
+        "t": "11:00 AM – 12:00 PM",
+        "sub": "LITERACY-HRT"
+      },
+      {
+        "s": 4,
+        "t": "12:30 PM- 1:30 PM",
+        "sub": "VISUAL ARTS"
+      },
+      {
+        "s": 5,
+        "t": "1:30 PM – 2:30 PM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 6,
+        "t": "2:30 PM – 3:30 PM",
+        "sub": "HRT TIME"
+      }
+    ],
+    "WED": [
+      {
+        "s": 0,
+        "t": "8:30 AM – 8:45 AM",
+        "sub": "CIRCLE TIME"
+      },
+      {
+        "s": 1,
+        "t": "8:45 AM – 9:45 AM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 2,
+        "t": "10:00 AM – 11:00 AM",
+        "sub": "Chess/Abacus"
+      },
+      {
+        "s": 3,
+        "t": "11:00 AM – 12:00 PM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 4,
+        "t": "12:30 PM- 1:30 PM",
+        "sub": "PSPE-GEETHA"
+      },
+      {
+        "s": 5,
+        "t": "1:30 PM – 2:30 PM",
+        "sub": "Brain Gym"
+      },
+      {
+        "s": 6,
+        "t": "2:30 PM – 3:30 PM",
+        "sub": "HRT TIME"
+      }
+    ],
+    "THUR": [
+      {
+        "s": 0,
+        "t": "8:30 AM – 8:45 AM",
+        "sub": "CIRCLE TIME"
+      },
+      {
+        "s": 1,
+        "t": "8:45 AM – 9:45 AM",
+        "sub": "LITERACY-HRT"
+      },
+      {
+        "s": 2,
+        "t": "10:00 AM – 11:00 AM",
+        "sub": "CONSTRUCTIVE PLAY-HRT"
+      },
+      {
+        "s": 3,
+        "t": "11:00 AM – 12:00 PM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 4,
+        "t": "12:30 PM- 1:30 PM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 5,
+        "t": "1:30 PM – 2:30 PM",
+        "sub": "II Lang"
+      },
+      {
+        "s": 6,
+        "t": "2:30 PM – 3:30 PM",
+        "sub": "CLUB"
+      }
+    ],
+    "FRI": [
+      {
+        "s": 0,
+        "t": "8:30 AM – 8:45 AM",
+        "sub": "CIRCLE TIME"
+      },
+      {
+        "s": 1,
+        "t": "8:45 AM – 9:45 AM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 2,
+        "t": "10:00 AM – 11:00 AM",
+        "sub": "Karate/ Silambam"
+      },
+      {
+        "s": 3,
+        "t": "11:00 AM – 12:00 PM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 4,
+        "t": "12:30 PM- 1:30 PM",
+        "sub": "II Lang"
+      },
+      {
+        "s": 5,
+        "t": "1:30 PM – 2:30 PM",
+        "sub": "READE SCAPE"
+      },
+      {
+        "s": 6,
+        "t": "2:30 PM – 3:30 PM",
+        "sub": "HRT TIME"
+      }
+    ]
+  },
+  "PYP 1 Omega": {
+    "MON": [
+      {
+        "s": 0,
+        "t": "8:30 AM – 8:45 AM",
+        "sub": "CIRCLE TIME"
+      },
+      {
+        "s": 1,
+        "t": "8:45 AM – 9:45 AM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 2,
+        "t": "10:00 AM – 11:00 AM",
+        "sub": "Yoga/ karate/ silambam"
+      },
+      {
+        "s": 3,
+        "t": "11:00 AM – 12:00 PM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 4,
+        "t": "12:30 PM- 1:30 PM",
+        "sub": "Read Scape"
+      },
+      {
+        "s": 5,
+        "t": "1:30 PM – 2:30 PM",
+        "sub": "Visual Arts"
+      },
+      {
+        "s": 6,
+        "t": "2:30 PM – 3:30 PM",
+        "sub": "PSPE"
+      }
+    ],
+    "TUE": [
+      {
+        "s": 0,
+        "t": "8:30 AM – 8:45 AM",
+        "sub": "CIRCLE TIME"
+      },
+      {
+        "s": 1,
+        "t": "8:45 AM – 9:45 AM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 2,
+        "t": "10:00 AM – 11:00 AM",
+        "sub": "III Lang(Tamil Phase 1-PYP1 Omega)\n(Tamil Phase 2-R1)\nFrench Phase 1- R2"
+      },
+      {
+        "s": 3,
+        "t": "11:00 AM – 12:00 PM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 4,
+        "t": "12:30 PM- 1:30 PM",
+        "sub": "II Lang(Tamil Phase1-PYP 1 Omega)\n(Tamil Phase 2-R1)\n(Hindi Phase 1-R2)\n(Hindi Phase 2-R3)"
+      },
+      {
+        "s": 5,
+        "t": "1:30 PM – 2:30 PM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 6,
+        "t": "2:30 PM – 3:30 PM",
+        "sub": "HRT TIME"
+      }
+    ],
+    "WED": [
+      {
+        "s": 0,
+        "t": "8:30 AM – 8:45 AM",
+        "sub": "CIRCLE TIME"
+      },
+      {
+        "s": 1,
+        "t": "8:45 AM – 9:45 AM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 2,
+        "t": "10:00 AM – 11:00 AM",
+        "sub": "Literacy"
+      },
+      {
+        "s": 3,
+        "t": "11:00 AM – 12:00 PM",
+        "sub": "DANCE/ Vocal"
+      },
+      {
+        "s": 4,
+        "t": "12:30 PM- 1:30 PM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 5,
+        "t": "1:30 PM – 2:30 PM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 6,
+        "t": "2:30 PM – 3:30 PM",
+        "sub": "II Lang\n(Tamil Phase1-PYP 1 Omega)\n(Tamil Phase 2-R1)\n(Hindi Phase 1-R2)\n(Hindi Phase 2-R3)"
+      }
+    ],
+    "THUR": [
+      {
+        "s": 0,
+        "t": "8:30 AM – 8:45 AM",
+        "sub": "CIRCLE TIME"
+      },
+      {
+        "s": 1,
+        "t": "8:45 AM – 9:45 AM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 2,
+        "t": "10:00 AM – 11:00 AM",
+        "sub": "Visual Arts"
+      },
+      {
+        "s": 3,
+        "t": "11:00 AM – 12:00 PM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 4,
+        "t": "12:30 PM- 1:30 PM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 5,
+        "t": "1:30 PM – 2:30 PM",
+        "sub": "Numeracy"
+      },
+      {
+        "s": 6,
+        "t": "2:30 PM – 3:30 PM",
+        "sub": "Club"
+      }
+    ],
+    "FRI": [
+      {
+        "s": 0,
+        "t": "8:30 AM – 8:45 AM",
+        "sub": "CIRCLE TIME"
+      },
+      {
+        "s": 1,
+        "t": "8:45 AM – 9:45 AM",
+        "sub": "Numeracy"
+      },
+      {
+        "s": 2,
+        "t": "10:00 AM – 11:00 AM",
+        "sub": "Chess/Robotics"
+      },
+      {
+        "s": 3,
+        "t": "11:00 AM – 12:00 PM",
+        "sub": "III Lang"
+      },
+      {
+        "s": 4,
+        "t": "12:30 PM- 1:30 PM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 5,
+        "t": "1:30 PM – 2:30 PM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 6,
+        "t": "2:30 PM – 3:30 PM",
+        "sub": "Literacy"
+      }
+    ]
+  },
+  "PYP 1B Delta": {
+    "MON": [
+      {
+        "s": 0,
+        "t": "8:30 AM – 8:45 AM",
+        "sub": "CIRCLE TIME"
+      },
+      {
+        "s": 1,
+        "t": "8:45 AM – 9:45 AM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 2,
+        "t": "10:00 AM – 11:00 AM",
+        "sub": "Yoga/ karate/ silambam"
+      },
+      {
+        "s": 3,
+        "t": "11:00 AM – 12:00 PM",
+        "sub": "DANCE/ Vocal"
+      },
+      {
+        "s": 4,
+        "t": "12:30 PM- 1:30 PM",
+        "sub": "II Lang(Tamil Phase 1-PYP 1Delta)\n(Tamil Phase 2-R1)\n(Hindi Phase 1-R2)\n(Hindi Phase2-R5)"
+      },
+      {
+        "s": 5,
+        "t": "1:30 PM – 2:30 PM",
+        "sub": "Literacy"
+      },
+      {
+        "s": 6,
+        "t": "2:30 PM – 3:30 PM",
+        "sub": "HRT TIME"
+      }
+    ],
+    "TUE": [
+      {
+        "s": 0,
+        "t": "8:30 AM – 8:45 AM",
+        "sub": "CIRCLE TIME"
+      },
+      {
+        "s": 1,
+        "t": "8:45 AM – 9:45 AM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 2,
+        "t": "10:00 AM – 11:00 AM",
+        "sub": "III Lang(Tamil Phase 1-PYP1 Delta)\n(Tamil Phase 2-R1)\n(French Phase 1- R2)\n(French Phase 2-R3)"
+      },
+      {
+        "s": 3,
+        "t": "11:00 AM – 12:00 PM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 4,
+        "t": "12:30 PM- 1:30 PM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 5,
+        "t": "1:30 PM – 2:30 PM",
+        "sub": "PSPE"
+      },
+      {
+        "s": 6,
+        "t": "2:30 PM – 3:30 PM",
+        "sub": "Read Scape"
+      }
+    ],
+    "WED": [
+      {
+        "s": 0,
+        "t": "8:30 AM – 8:45 AM",
+        "sub": "CIRCLE TIME"
+      },
+      {
+        "s": 1,
+        "t": "8:45 AM – 9:45 AM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 2,
+        "t": "10:00 AM – 11:00 AM",
+        "sub": "Numeracy"
+      },
+      {
+        "s": 3,
+        "t": "11:00 AM – 12:00 PM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 4,
+        "t": "12:30 PM- 1:30 PM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 5,
+        "t": "1:30 PM – 2:30 PM",
+        "sub": "Visual Arts"
+      },
+      {
+        "s": 6,
+        "t": "2:30 PM – 3:30 PM",
+        "sub": "HRT TIME"
+      }
+    ],
+    "THUR": [
+      {
+        "s": 0,
+        "t": "8:30 AM – 8:45 AM",
+        "sub": "CIRCLE TIME"
+      },
+      {
+        "s": 1,
+        "t": "8:45 AM – 9:45 AM",
+        "sub": "Numeracy"
+      },
+      {
+        "s": 2,
+        "t": "10:00 AM – 11:00 AM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 3,
+        "t": "11:00 AM – 12:00 PM",
+        "sub": "Visual Arts"
+      },
+      {
+        "s": 4,
+        "t": "12:30 PM- 1:30 PM",
+        "sub": "II Lang"
+      },
+      {
+        "s": 5,
+        "t": "1:30 PM – 2:30 PM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 6,
+        "t": "2:30 PM – 3:30 PM",
+        "sub": "Club"
+      }
+    ],
+    "FRI": [
+      {
+        "s": 0,
+        "t": "8:30 AM – 8:45 AM",
+        "sub": "CIRCLE TIME"
+      },
+      {
+        "s": 1,
+        "t": "8:45 AM – 9:45 AM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 2,
+        "t": "10:00 AM – 11:00 AM",
+        "sub": "Chess/Robotics"
+      },
+      {
+        "s": 3,
+        "t": "11:00 AM – 12:00 PM",
+        "sub": "III Lang"
+      },
+      {
+        "s": 4,
+        "t": "12:30 PM- 1:30 PM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 5,
+        "t": "1:30 PM – 2:30 PM",
+        "sub": "Literacy"
+      },
+      {
+        "s": 6,
+        "t": "2:30 PM – 3:30 PM",
+        "sub": "HRT TIME"
+      }
+    ]
+  },
+  "PYP 1C Sigma": {
+    "MON": [
+      {
+        "s": 0,
+        "t": "8:30 AM – 8:45 AM",
+        "sub": "CIRCLE TIME"
+      },
+      {
+        "s": 1,
+        "t": "8:45 AM – 9:45 AM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 2,
+        "t": "10:00 AM – 11:00 AM",
+        "sub": "Yoga/ karate/ silambam"
+      },
+      {
+        "s": 3,
+        "t": "11:00 AM – 12:00 PM",
+        "sub": "Literacy"
+      },
+      {
+        "s": 4,
+        "t": "12:30 PM- 1:30 PM",
+        "sub": "DANCE/ Vocal"
+      },
+      {
+        "s": 5,
+        "t": "1:30 PM – 2:30 PM",
+        "sub": "Read Scape"
+      },
+      {
+        "s": 6,
+        "t": "2:30 PM – 3:30 PM",
+        "sub": "HRT TIME"
+      }
+    ],
+    "TUE": [
+      {
+        "s": 0,
+        "t": "8:30 AM – 8:45 AM",
+        "sub": "CIRCLE TIME"
+      },
+      {
+        "s": 1,
+        "t": "8:45 AM – 9:45 AM",
+        "sub": "Numeracy"
+      },
+      {
+        "s": 2,
+        "t": "10:00 AM – 11:00 AM",
+        "sub": "III Lang(Tamil Phase 1-PYP1 Delta)\n(Tamil Phase 2-R1)\n(French Phase 1- R2)\n(French Phase 2-R3)"
+      },
+      {
+        "s": 3,
+        "t": "11:00 AM – 12:00 PM",
+        "sub": "II Lang(Tamil Phase1-PYP1 Sigma)\n(Tamil Phase 2-R1)\n(Hindi Phase 1- R3)\n(Hindi Phase 2-R4)"
+      },
+      {
+        "s": 4,
+        "t": "12:30 PM- 1:30 PM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 5,
+        "t": "1:30 PM – 2:30 PM",
+        "sub": "Visual Arts"
+      },
+      {
+        "s": 6,
+        "t": "2:30 PM – 3:30 PM",
+        "sub": "HRT TIME"
+      }
+    ],
+    "WED": [
+      {
+        "s": 0,
+        "t": "8:30 AM – 8:45 AM",
+        "sub": "CIRCLE TIME"
+      },
+      {
+        "s": 1,
+        "t": "8:45 AM – 9:45 AM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 2,
+        "t": "10:00 AM – 11:00 AM",
+        "sub": "II Lang"
+      },
+      {
+        "s": 3,
+        "t": "11:00 AM – 12:00 PM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 4,
+        "t": "12:30 PM- 1:30 PM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 5,
+        "t": "1:30 PM – 2:30 PM",
+        "sub": "Numeracy"
+      },
+      {
+        "s": 6,
+        "t": "2:30 PM – 3:30 PM",
+        "sub": "HRT TIME"
+      }
+    ],
+    "THUR": [
+      {
+        "s": 0,
+        "t": "8:30 AM – 8:45 AM",
+        "sub": "CIRCLE TIME"
+      },
+      {
+        "s": 1,
+        "t": "8:45 AM – 9:45 AM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 2,
+        "t": "10:00 AM – 11:00 AM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 3,
+        "t": "11:00 AM – 12:00 PM",
+        "sub": "Literacy"
+      },
+      {
+        "s": 4,
+        "t": "12:30 PM- 1:30 PM",
+        "sub": "Visual Arts"
+      },
+      {
+        "s": 5,
+        "t": "1:30 PM – 2:30 PM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 6,
+        "t": "2:30 PM – 3:30 PM",
+        "sub": "Club"
+      }
+    ],
+    "FRI": [
+      {
+        "s": 0,
+        "t": "8:30 AM – 8:45 AM",
+        "sub": "CIRCLE TIME"
+      },
+      {
+        "s": 1,
+        "t": "8:45 AM – 9:45 AM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 2,
+        "t": "10:00 AM – 11:00 AM",
+        "sub": "Chess/Robotics"
+      },
+      {
+        "s": 3,
+        "t": "11:00 AM – 12:00 PM",
+        "sub": "III Lang"
+      },
+      {
+        "s": 4,
+        "t": "12:30 PM- 1:30 PM",
+        "sub": "PSPE"
+      },
+      {
+        "s": 5,
+        "t": "1:30 PM – 2:30 PM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 6,
+        "t": "2:30 PM – 3:30 PM",
+        "sub": "HRT TIME"
+      }
+    ]
+  },
+  "PYP 2 Delta": {
+    "MON": [
+      {
+        "s": 0,
+        "t": "8:30 AM – 8:45 AM",
+        "sub": "CIRCLE TIME"
+      },
+      {
+        "s": 1,
+        "t": "8:45 AM – 9:45 AM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 2,
+        "t": "10:00 AM – 11:00 AM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 3,
+        "t": "11:00 AM – 12:00 PM",
+        "sub": "Yoga/ karate/ silambam"
+      },
+      {
+        "s": 4,
+        "t": "12:30 PM- 1:30 PM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 5,
+        "t": "1:30 PM – 2:30 PM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 6,
+        "t": "2:30 PM – 3:30 PM",
+        "sub": "Literacy"
+      }
+    ],
+    "TUE": [
+      {
+        "s": 0,
+        "t": "8:30 AM – 8:45 AM",
+        "sub": "CIRCLE TIME"
+      },
+      {
+        "s": 1,
+        "t": "8:45 AM – 9:45 AM",
+        "sub": "Visual Arts"
+      },
+      {
+        "s": 2,
+        "t": "10:00 AM – 11:00 AM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 3,
+        "t": "11:00 AM – 12:00 PM",
+        "sub": "III Lang(Tamil Phase 1-PYP2 Omega)\n(Tamil Phase 2-PYP2 Delta)\n(French Phase 1-R2)\n(French Phase 2-R5)"
+      },
+      {
+        "s": 4,
+        "t": "12:30 PM- 1:30 PM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 5,
+        "t": "1:30 PM – 2:30 PM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 6,
+        "t": "2:30 PM – 3:30 PM",
+        "sub": "HRT TIME"
+      }
+    ],
+    "WED": [
+      {
+        "s": 0,
+        "t": "8:30 AM – 8:45 AM",
+        "sub": "CIRCLE TIME"
+      },
+      {
+        "s": 1,
+        "t": "8:45 AM – 9:45 AM",
+        "sub": "PSPE"
+      },
+      {
+        "s": 2,
+        "t": "10:00 AM – 11:00 AM",
+        "sub": "II Lang(Tamil Phase 1-PYP2 Omega)\n(Tamil Phase 2-PYP2 Delta)\n(Hindi Phase1-R2)\n(Hindi Phase 2-R3)"
+      },
+      {
+        "s": 3,
+        "t": "11:00 AM – 12:00 PM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 4,
+        "t": "12:30 PM- 1:30 PM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 5,
+        "t": "1:30 PM – 2:30 PM",
+        "sub": "Literacy"
+      },
+      {
+        "s": 6,
+        "t": "2:30 PM – 3:30 PM",
+        "sub": "HRT TIME"
+      }
+    ],
+    "THUR": [
+      {
+        "s": 0,
+        "t": "8:30 AM – 8:45 AM",
+        "sub": "CIRCLE TIME"
+      },
+      {
+        "s": 1,
+        "t": "8:45 AM – 9:45 AM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 2,
+        "t": "10:00 AM – 11:00 AM",
+        "sub": "Numeracy"
+      },
+      {
+        "s": 3,
+        "t": "11:00 AM – 12:00 PM",
+        "sub": "II Lang"
+      },
+      {
+        "s": 4,
+        "t": "12:30 PM- 1:30 PM",
+        "sub": "III Lang"
+      },
+      {
+        "s": 5,
+        "t": "1:30 PM – 2:30 PM",
+        "sub": "Read Scape"
+      },
+      {
+        "s": 6,
+        "t": "2:30 PM – 3:30 PM",
+        "sub": "Club"
+      }
+    ],
+    "FRI": [
+      {
+        "s": 0,
+        "t": "8:30 AM – 8:45 AM",
+        "sub": "CIRCLE TIME"
+      },
+      {
+        "s": 1,
+        "t": "8:45 AM – 9:45 AM",
+        "sub": "Visual Arts"
+      },
+      {
+        "s": 2,
+        "t": "10:00 AM – 11:00 AM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 3,
+        "t": "11:00 AM – 12:00 PM",
+        "sub": "Chess/Robotics"
+      },
+      {
+        "s": 4,
+        "t": "12:30 PM- 1:30 PM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 5,
+        "t": "1:30 PM – 2:30 PM",
+        "sub": "Numeracy"
+      },
+      {
+        "s": 6,
+        "t": "2:30 PM – 3:30 PM",
+        "sub": "DANCE/ Vocal"
+      }
+    ]
+  },
+  "PYP 2 Omega": {
+    "MON": [
+      {
+        "s": 0,
+        "t": "8:30 AM – 8:45 AM",
+        "sub": "CIRCLE TIME"
+      },
+      {
+        "s": 1,
+        "t": "8:45 AM – 9:45 AM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 2,
+        "t": "10:00 AM – 11:00 AM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 3,
+        "t": "11:00 AM – 12:00 PM",
+        "sub": "Yoga/ karate/ silambam"
+      },
+      {
+        "s": 4,
+        "t": "12:30 PM- 1:30 PM",
+        "sub": "Visual Arts"
+      },
+      {
+        "s": 5,
+        "t": "1:30 PM – 2:30 PM",
+        "sub": "Numeracy"
+      },
+      {
+        "s": 6,
+        "t": "2:30 PM – 3:30 PM",
+        "sub": "HRT TIME"
+      }
+    ],
+    "TUE": [
+      {
+        "s": 0,
+        "t": "8:30 AM – 8:45 AM",
+        "sub": "CIRCLE TIME"
+      },
+      {
+        "s": 1,
+        "t": "8:45 AM – 9:45 AM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 2,
+        "t": "10:00 AM – 11:00 AM",
+        "sub": "Numeracy"
+      },
+      {
+        "s": 3,
+        "t": "11:00 AM – 12:00 PM",
+        "sub": "III Lang(Tamil Phase 1-PYP2 Omega)\n(Tamil Phase 2-PYP2 Delta)\n(French Phase 1-R2)\n(French Phase 2-R5)"
+      },
+      {
+        "s": 4,
+        "t": "12:30 PM- 1:30 PM",
+        "sub": "Literacy"
+      },
+      {
+        "s": 5,
+        "t": "1:30 PM – 2:30 PM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 6,
+        "t": "2:30 PM – 3:30 PM",
+        "sub": "HRT TIME"
+      }
+    ],
+    "WED": [
+      {
+        "s": 0,
+        "t": "8:30 AM – 8:45 AM",
+        "sub": "CIRCLE TIME"
+      },
+      {
+        "s": 1,
+        "t": "8:45 AM – 9:45 AM",
+        "sub": "Visual Arts"
+      },
+      {
+        "s": 2,
+        "t": "10:00 AM – 11:00 AM",
+        "sub": "II Lang(Tamil Phase 1-PYP2 Omega)\n(Tamil Phase 2-PYP2 Delta)\n(Hindi Phase1-R2)\n(Hindi Phase 2-R3)"
+      },
+      {
+        "s": 3,
+        "t": "11:00 AM – 12:00 PM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 4,
+        "t": "12:30 PM- 1:30 PM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 5,
+        "t": "1:30 PM – 2:30 PM",
+        "sub": "Read Scape"
+      },
+      {
+        "s": 6,
+        "t": "2:30 PM – 3:30 PM",
+        "sub": "HRT TIME"
+      }
+    ],
+    "THUR": [
+      {
+        "s": 0,
+        "t": "8:30 AM – 8:45 AM",
+        "sub": "CIRCLE TIME"
+      },
+      {
+        "s": 1,
+        "t": "8:45 AM – 9:45 AM",
+        "sub": "PSPE"
+      },
+      {
+        "s": 2,
+        "t": "10:00 AM – 11:00 AM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 3,
+        "t": "11:00 AM – 12:00 PM",
+        "sub": "II Lang(Tamil Phase 1-PYP2 Omega)\n(Tamil Phase 2-PYP2 Delta)\n(Hindi Phase1-R2)\n(Hindi Phase 2-R3\""
+      },
+      {
+        "s": 4,
+        "t": "12:30 PM- 1:30 PM",
+        "sub": "III Lang"
+      },
+      {
+        "s": 5,
+        "t": "1:30 PM – 2:30 PM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 6,
+        "t": "2:30 PM – 3:30 PM",
+        "sub": "Club"
+      }
+    ],
+    "FRI": [
+      {
+        "s": 0,
+        "t": "8:30 AM – 8:45 AM",
+        "sub": "CIRCLE TIME"
+      },
+      {
+        "s": 1,
+        "t": "8:45 AM – 9:45 AM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 2,
+        "t": "10:00 AM – 11:00 AM",
+        "sub": "Literacy"
+      },
+      {
+        "s": 3,
+        "t": "11:00 AM – 12:00 PM",
+        "sub": "Chess/Robotics"
+      },
+      {
+        "s": 4,
+        "t": "12:30 PM- 1:30 PM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 5,
+        "t": "1:30 PM – 2:30 PM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 6,
+        "t": "2:30 PM – 3:30 PM",
+        "sub": "DANCE/ Vocal"
+      }
+    ]
+  },
+  "PYP 3 Delta": {
+    "MON": [
+      {
+        "s": 0,
+        "t": "8:30 AM – 8:45 AM",
+        "sub": "CIRCLE TIME"
+      },
+      {
+        "s": 1,
+        "t": "8:45 AM – 9:45 AM",
+        "sub": "Visual Arts"
+      },
+      {
+        "s": 2,
+        "t": "10:00 AM – 11:00 AM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 3,
+        "t": "11:00 AM – 12:00 PM",
+        "sub": "Numeracy"
+      },
+      {
+        "s": 4,
+        "t": "12:30 PM- 1:30 PM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 5,
+        "t": "1:30 PM – 2:30 PM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 6,
+        "t": "2:30 PM – 3:30 PM",
+        "sub": "PSPE"
+      }
+    ],
+    "TUE": [
+      {
+        "s": 0,
+        "t": "8:30 AM – 8:45 AM",
+        "sub": "CIRCLE TIME"
+      },
+      {
+        "s": 1,
+        "t": "8:45 AM – 9:45 AM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 2,
+        "t": "10:00 AM – 11:00 AM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 3,
+        "t": "11:00 AM – 12:00 PM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 4,
+        "t": "12:30 PM- 1:30 PM",
+        "sub": "Literacy"
+      },
+      {
+        "s": 5,
+        "t": "1:30 PM – 2:30 PM",
+        "sub": "II Lang(Tamil Phase 1-PYP 3 Omega)\n(Tamil Phase 2-PYP3 Delta)\n(Hindi Phase 1- R1)\n(Hindi Phase 2-R3)"
+      },
+      {
+        "s": 6,
+        "t": "2:30 PM – 3:30 PM",
+        "sub": "HRT TIME"
+      }
+    ],
+    "WED": [
+      {
+        "s": 0,
+        "t": "8:30 AM – 8:45 AM",
+        "sub": "CIRCLE TIME"
+      },
+      {
+        "s": 1,
+        "t": "8:45 AM – 9:45 AM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 2,
+        "t": "10:00 AM – 11:00 AM",
+        "sub": "Numeracy"
+      },
+      {
+        "s": 3,
+        "t": "11:00 AM – 12:00 PM",
+        "sub": "Yoga/ karate/ silambam"
+      },
+      {
+        "s": 4,
+        "t": "12:30 PM- 1:30 PM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 5,
+        "t": "1:30 PM – 2:30 PM",
+        "sub": "Literacy"
+      },
+      {
+        "s": 6,
+        "t": "2:30 PM – 3:30 PM",
+        "sub": "HRT TIME"
+      }
+    ],
+    "THUR": [
+      {
+        "s": 0,
+        "t": "8:30 AM – 8:45 AM",
+        "sub": "CIRCLE TIME"
+      },
+      {
+        "s": 1,
+        "t": "8:45 AM – 9:45 AM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 2,
+        "t": "10:00 AM – 11:00 AM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 3,
+        "t": "11:00 AM – 12:00 PM",
+        "sub": "III Lang"
+      },
+      {
+        "s": 4,
+        "t": "12:30 PM- 1:30 PM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 5,
+        "t": "1:30 PM – 2:30 PM",
+        "sub": "Readscape"
+      },
+      {
+        "s": 6,
+        "t": "2:30 PM – 3:30 PM",
+        "sub": "Club"
+      }
+    ],
+    "FRI": [
+      {
+        "s": 0,
+        "t": "8:30 AM – 8:45 AM",
+        "sub": "CIRCLE TIME"
+      },
+      {
+        "s": 1,
+        "t": "8:45 AM – 9:45 AM",
+        "sub": "II Lang"
+      },
+      {
+        "s": 2,
+        "t": "10:00 AM – 11:00 AM",
+        "sub": "Visual Arts"
+      },
+      {
+        "s": 3,
+        "t": "11:00 AM – 12:00 PM",
+        "sub": "DANCE/ Vocal"
+      },
+      {
+        "s": 4,
+        "t": "12:30 PM- 1:30 PM",
+        "sub": "III Lang"
+      },
+      {
+        "s": 5,
+        "t": "1:30 PM – 2:30 PM",
+        "sub": "Chess/Robotics"
+      },
+      {
+        "s": 6,
+        "t": "2:30 PM – 3:30 PM",
+        "sub": "HRT TIME"
+      }
+    ]
+  },
+  "PYP 3 Omega": {
+    "MON": [
+      {
+        "s": 0,
+        "t": "8:30 AM – 8:45 AM",
+        "sub": "CIRCLE TIME"
+      },
+      {
+        "s": 1,
+        "t": "8:45 AM – 9:45 AM",
+        "sub": "PSPE"
+      },
+      {
+        "s": 2,
+        "t": "10:00 AM – 11:00 AM",
+        "sub": "Numeracy"
+      },
+      {
+        "s": 3,
+        "t": "11:00 AM – 12:00 PM",
+        "sub": "Visual Arts"
+      },
+      {
+        "s": 4,
+        "t": "12:30 PM- 1:30 PM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 5,
+        "t": "1:30 PM – 2:30 PM",
+        "sub": "Readscape"
+      },
+      {
+        "s": 6,
+        "t": "2:30 PM – 3:30 PM",
+        "sub": "HRT TIME"
+      }
+    ],
+    "TUE": [
+      {
+        "s": 0,
+        "t": "8:30 AM – 8:45 AM",
+        "sub": "CIRCLE TIME"
+      },
+      {
+        "s": 1,
+        "t": "8:45 AM – 9:45 AM",
+        "sub": "Literacy"
+      },
+      {
+        "s": 2,
+        "t": "10:00 AM – 11:00 AM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 3,
+        "t": "11:00 AM – 12:00 PM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 4,
+        "t": "12:30 PM- 1:30 PM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 5,
+        "t": "1:30 PM – 2:30 PM",
+        "sub": "II Lang(Tamil Phase 1-PYP 3 Omega)\n(Tamil Phase 2-PYP3 Delta)\n(Hindi Phase 1- R1)\n(Hindi Phase 2-R3)"
+      },
+      {
+        "s": 6,
+        "t": "2:30 PM – 3:30 PM",
+        "sub": "Numeracy"
+      }
+    ],
+    "WED": [
+      {
+        "s": 0,
+        "t": "8:30 AM – 8:45 AM",
+        "sub": "CIRCLE TIME"
+      },
+      {
+        "s": 1,
+        "t": "8:45 AM – 9:45 AM",
+        "sub": "Yoga/ karate/ silambam"
+      },
+      {
+        "s": 2,
+        "t": "10:00 AM – 11:00 AM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 3,
+        "t": "11:00 AM – 12:00 PM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 4,
+        "t": "12:30 PM- 1:30 PM",
+        "sub": "Chess/Robotics"
+      },
+      {
+        "s": 5,
+        "t": "1:30 PM – 2:30 PM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 6,
+        "t": "2:30 PM – 3:30 PM",
+        "sub": "HRT TIME"
+      }
+    ],
+    "THUR": [
+      {
+        "s": 0,
+        "t": "8:30 AM – 8:45 AM",
+        "sub": "CIRCLE TIME"
+      },
+      {
+        "s": 1,
+        "t": "8:45 AM – 9:45 AM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 2,
+        "t": "10:00 AM – 11:00 AM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 3,
+        "t": "11:00 AM – 12:00 PM",
+        "sub": "III Lang"
+      },
+      {
+        "s": 4,
+        "t": "12:30 PM- 1:30 PM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 5,
+        "t": "1:30 PM – 2:30 PM",
+        "sub": "Visual Arts"
+      },
+      {
+        "s": 6,
+        "t": "2:30 PM – 3:30 PM",
+        "sub": "Club"
+      }
+    ],
+    "FRI": [
+      {
+        "s": 0,
+        "t": "8:30 AM – 8:45 AM",
+        "sub": "CIRCLE TIME"
+      },
+      {
+        "s": 1,
+        "t": "8:45 AM – 9:45 AM",
+        "sub": "II Lang"
+      },
+      {
+        "s": 2,
+        "t": "10:00 AM – 11:00 AM",
+        "sub": "Literacy"
+      },
+      {
+        "s": 3,
+        "t": "11:00 AM – 12:00 PM",
+        "sub": "DANCE/ Vocal"
+      },
+      {
+        "s": 4,
+        "t": "12:30 PM- 1:30 PM",
+        "sub": "III Lang"
+      },
+      {
+        "s": 5,
+        "t": "1:30 PM – 2:30 PM",
+        "sub": "Chess/Robotics"
+      },
+      {
+        "s": 6,
+        "t": "2:30 PM – 3:30 PM",
+        "sub": "HRT TIME"
+      }
+    ]
+  },
+  "PYP 4 Delta": {
+    "MON": [
+      {
+        "s": 0,
+        "t": "8:30 AM – 8:45 AM",
+        "sub": "CIRCLE TIME"
+      },
+      {
+        "s": 1,
+        "t": "8:45 AM – 9:45 AM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 2,
+        "t": "10:00 AM – 11:00 AM",
+        "sub": "Visual Arts"
+      },
+      {
+        "s": 3,
+        "t": "11:00 AM – 12:00 PM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 4,
+        "t": "12:30 PM- 1:30 PM",
+        "sub": "Read Scape"
+      },
+      {
+        "s": 5,
+        "t": "1:30 PM – 2:30 PM",
+        "sub": "Yoga/ karate/ silambam"
+      },
+      {
+        "s": 6,
+        "t": "2:30 PM – 3:30 PM",
+        "sub": "HRT TIME"
+      }
+    ],
+    "TUE": [
+      {
+        "s": 0,
+        "t": "8:30 AM – 8:45 AM",
+        "sub": "CIRCLE TIME"
+      },
+      {
+        "s": 1,
+        "t": "8:45 AM – 9:45 AM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 2,
+        "t": "10:00 AM – 11:00 AM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 3,
+        "t": "11:00 AM – 12:00 PM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 4,
+        "t": "12:30 PM- 1:30 PM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 5,
+        "t": "1:30 PM – 2:30 PM",
+        "sub": "PSPE"
+      },
+      {
+        "s": 6,
+        "t": "2:30 PM – 3:30 PM",
+        "sub": "II Lang(Tamil Phase 1-PYP4 Omega)\n(Tamil Phase 2-PYP4 Delta)\n(Hindi Phase 1-R1)\n(Hindi Phase 2-R2)"
+      }
+    ],
+    "WED": [
+      {
+        "s": 0,
+        "t": "8:30 AM – 8:45 AM",
+        "sub": "CIRCLE TIME"
+      },
+      {
+        "s": 1,
+        "t": "8:45 AM – 9:45 AM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 2,
+        "t": "10:00 AM – 11:00 AM",
+        "sub": "Literacy"
+      },
+      {
+        "s": 3,
+        "t": "11:00 AM – 12:00 PM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 4,
+        "t": "12:30 PM- 1:30 PM",
+        "sub": "III Lang"
+      },
+      {
+        "s": 5,
+        "t": "1:30 PM – 2:30 PM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 6,
+        "t": "2:30 PM – 3:30 PM",
+        "sub": "Numeracy"
+      }
+    ],
+    "THUR": [
+      {
+        "s": 0,
+        "t": "8:30 AM – 8:45 AM",
+        "sub": "CIRCLE TIME"
+      },
+      {
+        "s": 1,
+        "t": "8:45 AM – 9:45 AM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 2,
+        "t": "10:00 AM – 11:00 AM",
+        "sub": "Literacy"
+      },
+      {
+        "s": 3,
+        "t": "11:00 AM – 12:00 PM",
+        "sub": "II Lang"
+      },
+      {
+        "s": 4,
+        "t": "12:30 PM- 1:30 PM",
+        "sub": "Numeracy"
+      },
+      {
+        "s": 5,
+        "t": "1:30 PM – 2:30 PM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 6,
+        "t": "2:30 PM – 3:30 PM",
+        "sub": "Club"
+      }
+    ],
+    "FRI": [
+      {
+        "s": 0,
+        "t": "8:30 AM – 8:45 AM",
+        "sub": "CIRCLE TIME"
+      },
+      {
+        "s": 1,
+        "t": "8:45 AM – 9:45 AM",
+        "sub": "DANCE/ Vocal"
+      },
+      {
+        "s": 2,
+        "t": "10:00 AM – 11:00 AM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 3,
+        "t": "11:00 AM – 12:00 PM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 4,
+        "t": "12:30 PM- 1:30 PM",
+        "sub": "Visual Arts"
+      },
+      {
+        "s": 5,
+        "t": "1:30 PM – 2:30 PM",
+        "sub": "III Lang"
+      },
+      {
+        "s": 6,
+        "t": "2:30 PM – 3:30 PM",
+        "sub": "Chess/Robotics"
+      }
+    ]
+  },
+  "PYP 4 Omega": {
+    "MON": [
+      {
+        "s": 0,
+        "t": "8:30 AM – 8:45 AM",
+        "sub": "CIRCLE TIME"
+      },
+      {
+        "s": 1,
+        "t": "8:45 AM – 9:45 AM",
+        "sub": "Literacy"
+      },
+      {
+        "s": 2,
+        "t": "10:00 AM – 11:00 AM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 3,
+        "t": "11:00 AM – 12:00 PM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 4,
+        "t": "12:30 PM- 1:30 PM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 5,
+        "t": "1:30 PM – 2:30 PM",
+        "sub": "Yoga/ karate/ silambam"
+      },
+      {
+        "s": 6,
+        "t": "2:30 PM – 3:30 PM",
+        "sub": "Numeracy"
+      }
+    ],
+    "TUE": [
+      {
+        "s": 0,
+        "t": "8:30 AM – 8:45 AM",
+        "sub": "CIRCLE TIME"
+      },
+      {
+        "s": 1,
+        "t": "8:45 AM – 9:45 AM",
+        "sub": "PSPE"
+      },
+      {
+        "s": 2,
+        "t": "10:00 AM – 11:00 AM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 3,
+        "t": "11:00 AM – 12:00 PM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 4,
+        "t": "12:30 PM- 1:30 PM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 5,
+        "t": "1:30 PM – 2:30 PM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 6,
+        "t": "2:30 PM – 3:30 PM",
+        "sub": "II Lang(Tamil Phase 1-PYP4 Omega)\n(Tamil Phase 2-PYP4 Delta)\n(Hindi Phase 1-R1)\n(Hindi Phase 2-R2)"
+      }
+    ],
+    "WED": [
+      {
+        "s": 0,
+        "t": "8:30 AM – 8:45 AM",
+        "sub": "CIRCLE TIME"
+      },
+      {
+        "s": 1,
+        "t": "8:45 AM – 9:45 AM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 2,
+        "t": "10:00 AM – 11:00 AM",
+        "sub": "Visual Arts"
+      },
+      {
+        "s": 3,
+        "t": "11:00 AM – 12:00 PM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 4,
+        "t": "12:30 PM- 1:30 PM",
+        "sub": "III Lang"
+      },
+      {
+        "s": 5,
+        "t": "1:30 PM – 2:30 PM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 6,
+        "t": "2:30 PM – 3:30 PM",
+        "sub": "Literacy"
+      }
+    ],
+    "THUR": [
+      {
+        "s": 0,
+        "t": "8:30 AM – 8:45 AM",
+        "sub": "CIRCLE TIME"
+      },
+      {
+        "s": 1,
+        "t": "8:45 AM – 9:45 AM",
+        "sub": "Visual Arts"
+      },
+      {
+        "s": 2,
+        "t": "10:00 AM – 11:00 AM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 3,
+        "t": "11:00 AM – 12:00 PM",
+        "sub": "II Lang"
+      },
+      {
+        "s": 4,
+        "t": "12:30 PM- 1:30 PM",
+        "sub": "Read Scape"
+      },
+      {
+        "s": 5,
+        "t": "1:30 PM – 2:30 PM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 6,
+        "t": "2:30 PM – 3:30 PM",
+        "sub": "Club"
+      }
+    ],
+    "FRI": [
+      {
+        "s": 0,
+        "t": "8:30 AM – 8:45 AM",
+        "sub": "CIRCLE TIME"
+      },
+      {
+        "s": 1,
+        "t": "8:45 AM – 9:45 AM",
+        "sub": "DANCE/ Vocal"
+      },
+      {
+        "s": 2,
+        "t": "10:00 AM – 11:00 AM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 3,
+        "t": "11:00 AM – 12:00 PM",
+        "sub": "Numeracy"
+      },
+      {
+        "s": 4,
+        "t": "12:30 PM- 1:30 PM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 5,
+        "t": "1:30 PM – 2:30 PM",
+        "sub": "III Lang"
+      },
+      {
+        "s": 6,
+        "t": "2:30 PM – 3:30 PM",
+        "sub": "Chess/Robotics"
+      }
+    ]
+  },
+  "PYP 5 Delta": {
+    "MON": [
+      {
+        "s": 0,
+        "t": "8:30 AM – 8:45 AM",
+        "sub": "CIRCLE TIME"
+      },
+      {
+        "s": 1,
+        "t": "8:45 AM – 9:45 AM",
+        "sub": "Yoga/ karate/ silambam"
+      },
+      {
+        "s": 2,
+        "t": "10:00 AM – 11:00 AM",
+        "sub": "DANCE/ Vocal"
+      },
+      {
+        "s": 3,
+        "t": "11:00 AM – 12:00 PM",
+        "sub": "II Lang(Tamil Phase1-PYP5 Omega)\n(Tamil Phase 2-PYP5 Delta)\n(Hindi Phase1-R3)\n(Hindi Phase 2-R4)"
+      },
+      {
+        "s": 4,
+        "t": "12:30 PM- 1:30 PM",
+        "sub": "III Lang(Tamil Phase 1-PYP5 Omega)\n(Tamil Phase 2- PYP5 Delta)\n(French Phase 1- R3)\n(French Phase 2-R4)"
+      },
+      {
+        "s": 5,
+        "t": "1:30 PM – 2:30 PM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 6,
+        "t": "2:30 PM – 3:30 PM",
+        "sub": "HRT TIME"
+      }
+    ],
+    "TUE": [
+      {
+        "s": 0,
+        "t": "8:30 AM – 8:45 AM",
+        "sub": "CIRCLE TIME"
+      },
+      {
+        "s": 1,
+        "t": "8:45 AM – 9:45 AM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 2,
+        "t": "10:00 AM – 11:00 AM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 3,
+        "t": "11:00 AM – 12:00 PM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 4,
+        "t": "12:30 PM- 1:30 PM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 5,
+        "t": "1:30 PM – 2:30 PM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 6,
+        "t": "2:30 PM – 3:30 PM",
+        "sub": "Literacy"
+      }
+    ],
+    "WED": [
+      {
+        "s": 0,
+        "t": "8:30 AM – 8:45 AM",
+        "sub": "CIRCLE TIME"
+      },
+      {
+        "s": 1,
+        "t": "8:45 AM – 9:45 AM",
+        "sub": "II Lang(Tamil Phase 1-PYP5Omega)\n(Tamil Phase 2-PYP5 Delta)\n(Hindi Phase 1-R1)\n(Hindi Phase 1-R2)"
+      },
+      {
+        "s": 2,
+        "t": "10:00 AM – 11:00 AM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 3,
+        "t": "11:00 AM – 12:00 PM",
+        "sub": "Chess/Robotics"
+      },
+      {
+        "s": 4,
+        "t": "12:30 PM- 1:30 PM",
+        "sub": "Literacy"
+      },
+      {
+        "s": 5,
+        "t": "1:30 PM – 2:30 PM",
+        "sub": "III Lang"
+      },
+      {
+        "s": 6,
+        "t": "2:30 PM – 3:30 PM",
+        "sub": "HRT TIME"
+      }
+    ],
+    "THUR": [
+      {
+        "s": 0,
+        "t": "8:30 AM – 8:45 AM",
+        "sub": "CIRCLE TIME"
+      },
+      {
+        "s": 1,
+        "t": "8:45 AM – 9:45 AM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 2,
+        "t": "10:00 AM – 11:00 AM",
+        "sub": "Visual Arts"
+      },
+      {
+        "s": 3,
+        "t": "11:00 AM – 12:00 PM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 4,
+        "t": "12:30 PM- 1:30 PM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 5,
+        "t": "1:30 PM – 2:30 PM",
+        "sub": "PSPE"
+      },
+      {
+        "s": 6,
+        "t": "2:30 PM – 3:30 PM",
+        "sub": "Club"
+      }
+    ],
+    "FRI": [
+      {
+        "s": 0,
+        "t": "8:30 AM – 8:45 AM",
+        "sub": "CIRCLE TIME"
+      },
+      {
+        "s": 1,
+        "t": "8:45 AM – 9:45 AM",
+        "sub": "HRT TIME/Numeracy"
+      },
+      {
+        "s": 2,
+        "t": "10:00 AM – 11:00 AM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 3,
+        "t": "11:00 AM – 12:00 PM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 4,
+        "t": "12:30 PM- 1:30 PM",
+        "sub": "Read Scape"
+      },
+      {
+        "s": 5,
+        "t": "1:30 PM – 2:30 PM",
+        "sub": "Visual Arts"
+      },
+      {
+        "s": 6,
+        "t": "2:30 PM – 3:30 PM",
+        "sub": "HRT TIME"
+      }
+    ]
+  },
+  "PYP 5 Omega": {
+    "MON": [
+      {
+        "s": 0,
+        "t": "8:30 AM – 8:45 AM",
+        "sub": "CIRCLE TIME"
+      },
+      {
+        "s": 1,
+        "t": "8:45 AM – 9:45 AM",
+        "sub": "Yoga/ karate/ silambam"
+      },
+      {
+        "s": 2,
+        "t": "10:00 AM – 11:00 AM",
+        "sub": "DANCE/ Vocal"
+      },
+      {
+        "s": 3,
+        "t": "11:00 AM – 12:00 PM",
+        "sub": "II Lang(Tamil Phase1-PYP5 Omega)\n(Tamil Phase 2-PYP5 Delta)\n(Hindi Phase1-R3)\n(Hindi Phase 2-R4)"
+      },
+      {
+        "s": 4,
+        "t": "12:30 PM- 1:30 PM",
+        "sub": "III Lang(Tamil Phase 1-PYP5 Omega)\n(Tamil Phase 2- PYP5 Delta)\n(French Phase 1- R3)\n(French Phase 2-R4)"
+      },
+      {
+        "s": 5,
+        "t": "1:30 PM – 2:30 PM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 6,
+        "t": "2:30 PM – 3:30 PM",
+        "sub": "HRT TIME"
+      }
+    ],
+    "TUE": [
+      {
+        "s": 0,
+        "t": "8:30 AM – 8:45 AM",
+        "sub": "CIRCLE TIME"
+      },
+      {
+        "s": 1,
+        "t": "8:45 AM – 9:45 AM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 2,
+        "t": "10:00 AM – 11:00 AM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 3,
+        "t": "11:00 AM – 12:00 PM",
+        "sub": "Literacy"
+      },
+      {
+        "s": 4,
+        "t": "12:30 PM- 1:30 PM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 5,
+        "t": "1:30 PM – 2:30 PM",
+        "sub": "Visual Arts"
+      },
+      {
+        "s": 6,
+        "t": "2:30 PM – 3:30 PM",
+        "sub": "Read Scape"
+      }
+    ],
+    "WED": [
+      {
+        "s": 0,
+        "t": "8:30 AM – 8:45 AM",
+        "sub": "CIRCLE TIME"
+      },
+      {
+        "s": 1,
+        "t": "8:45 AM – 9:45 AM",
+        "sub": "II Lang(Tamil Phase 1-PYP5Omega)\n(Tamil Phase 2-PYP5 Delta)\n(Hindi Phase 1-R1)\n(Hindi Phase 1-R2)"
+      },
+      {
+        "s": 2,
+        "t": "10:00 AM – 11:00 AM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 3,
+        "t": "11:00 AM – 12:00 PM",
+        "sub": "Chess/Robotics"
+      },
+      {
+        "s": 4,
+        "t": "12:30 PM- 1:30 PM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 5,
+        "t": "1:30 PM – 2:30 PM",
+        "sub": "III Lang"
+      },
+      {
+        "s": 6,
+        "t": "2:30 PM – 3:30 PM",
+        "sub": "HRT TIME"
+      }
+    ],
+    "THUR": [
+      {
+        "s": 0,
+        "t": "8:30 AM – 8:45 AM",
+        "sub": "CIRCLE TIME"
+      },
+      {
+        "s": 1,
+        "t": "8:45 AM – 9:45 AM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 2,
+        "t": "10:00 AM – 11:00 AM",
+        "sub": "PSPE"
+      },
+      {
+        "s": 3,
+        "t": "11:00 AM – 12:00 PM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 4,
+        "t": "12:30 PM- 1:30 PM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 5,
+        "t": "1:30 PM – 2:30 PM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 6,
+        "t": "2:30 PM – 3:30 PM",
+        "sub": "Club"
+      }
+    ],
+    "FRI": [
+      {
+        "s": 0,
+        "t": "8:30 AM – 8:45 AM",
+        "sub": "CIRCLE TIME"
+      },
+      {
+        "s": 1,
+        "t": "8:45 AM – 9:45 AM",
+        "sub": "Visual Arts"
+      },
+      {
+        "s": 2,
+        "t": "10:00 AM – 11:00 AM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 3,
+        "t": "11:00 AM – 12:00 PM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 4,
+        "t": "12:30 PM- 1:30 PM",
+        "sub": "HRT TIME"
+      },
+      {
+        "s": 5,
+        "t": "1:30 PM – 2:30 PM",
+        "sub": "HRT TIME/Numeracy"
+      },
+      {
+        "s": 6,
+        "t": "2:30 PM – 3:30 PM",
+        "sub": "HRT TIME"
+      }
+    ]
+  },
+  "MYP 1 Delta": {
+    "MON": [
+      {
+        "s": 0,
+        "t": "8:30 -8:45",
+        "sub": "HRT"
+      },
+      {
+        "s": 1,
+        "t": "1.8:45-9:45",
+        "sub": "Guitar/Keyboard/Vocal"
+      },
+      {
+        "s": 2,
+        "t": "10:00-11:00",
+        "sub": "Maths"
+      },
+      {
+        "s": 3,
+        "t": "11:00 - 12:00",
+        "sub": "Integrated Sciences"
+      },
+      {
+        "s": 4,
+        "t": "12:30 - 1:30",
+        "sub": "SDG/Wellness"
+      },
+      {
+        "s": 5,
+        "t": "1:30 - 2:30",
+        "sub": "PA (Sem1)/VA (Sem 2)"
+      },
+      {
+        "s": 6,
+        "t": "2:30-3:30",
+        "sub": "LA\nFrench Phase 1 - MYP 1 Omega\nFrench Phase 2 - MYP 1 Delta\nHindi Phase 1 - R6\nHindi Phase 2 - R4"
+      }
+    ],
+    "TUE": [
+      {
+        "s": 0,
+        "t": "8:30 -8:45",
+        "sub": "HRT"
+      },
+      {
+        "s": 1,
+        "t": "1.8:45-9:45",
+        "sub": "LA\nFrench Phase 1 - MYP 1 Omega\nFrench Phase 2 - MYP 1 Delta\nHindi Phase 1 - R6\nHindi Phase 2 - R4"
+      },
+      {
+        "s": 2,
+        "t": "10:00-11:00",
+        "sub": "LL"
+      },
+      {
+        "s": 3,
+        "t": "11:00 - 12:00",
+        "sub": "PHE"
+      },
+      {
+        "s": 4,
+        "t": "12:30 - 1:30",
+        "sub": "LIBRARY"
+      },
+      {
+        "s": 5,
+        "t": "1:30 - 2:30",
+        "sub": "INS"
+      },
+      {
+        "s": 6,
+        "t": "2:30-3:30",
+        "sub": "PA (Sem1)/VA (Sem 2)"
+      }
+    ],
+    "WED": [
+      {
+        "s": 0,
+        "t": "8:30 -8:45",
+        "sub": "HRT"
+      },
+      {
+        "s": 1,
+        "t": "1.8:45-9:45",
+        "sub": "Karate/Silambam"
+      },
+      {
+        "s": 2,
+        "t": "10:00-11:00",
+        "sub": "PHE"
+      },
+      {
+        "s": 3,
+        "t": "11:00 - 12:00",
+        "sub": "INS"
+      },
+      {
+        "s": 4,
+        "t": "12:30 - 1:30",
+        "sub": "Integrated Sciences"
+      },
+      {
+        "s": 5,
+        "t": "1:30 - 2:30",
+        "sub": "DD( Sem 1) PD (Sem 2)"
+      },
+      {
+        "s": 6,
+        "t": "2:30-3:30",
+        "sub": "LL"
+      }
+    ],
+    "THUR": [
+      {
+        "s": 0,
+        "t": "8:30 -8:45",
+        "sub": "HRT"
+      },
+      {
+        "s": 1,
+        "t": "1.8:45-9:45",
+        "sub": "DD( Sem 1) PD (Sem 2)"
+      },
+      {
+        "s": 2,
+        "t": "10:00-11:00",
+        "sub": "LA\nFrench Phase 1 - MYP 1 Omega\nFrench Phase 2 - MYP 1 Delta\nHindi Phase 1 - R6\nHindi Phase 2 - R4"
+      },
+      {
+        "s": 3,
+        "t": "11:00 - 12:00",
+        "sub": "LL"
+      },
+      {
+        "s": 4,
+        "t": "12:30 - 1:30",
+        "sub": "PHE"
+      },
+      {
+        "s": 5,
+        "t": "1:30 - 2:30",
+        "sub": "INS"
+      },
+      {
+        "s": 6,
+        "t": "2:30-3:30",
+        "sub": "Maths"
+      }
+    ],
+    "FRI": [
+      {
+        "s": 0,
+        "t": "8:30 -8:45",
+        "sub": "HRT"
+      },
+      {
+        "s": 1,
+        "t": "1.8:45-9:45",
+        "sub": "Robotics/Chess/Coding"
+      },
+      {
+        "s": 2,
+        "t": "10:00-11:00",
+        "sub": "Maths"
+      },
+      {
+        "s": 3,
+        "t": "11:00 - 12:00",
+        "sub": "PA (Sem1)/VA (Sem 2)"
+      },
+      {
+        "s": 4,
+        "t": "12:30 - 1:30",
+        "sub": "Integrated Sciences"
+      },
+      {
+        "s": 5,
+        "t": "1:30 - 2:30",
+        "sub": "DD( Sem 1) PD (Sem 2)"
+      },
+      {
+        "s": 6,
+        "t": "2:30-3:30",
+        "sub": "CLUB"
+      }
+    ]
+  },
+  "MYP 1 Omega": {
+    "MON": [
+      {
+        "s": 0,
+        "t": "8:30 -8:45",
+        "sub": "HRT"
+      },
+      {
+        "s": 1,
+        "t": "1.8:45-9:45",
+        "sub": "Guitar/Keyboard/Vocal"
+      },
+      {
+        "s": 2,
+        "t": "10:00-11:00",
+        "sub": "Maths"
+      },
+      {
+        "s": 3,
+        "t": "11:00 - 12:00",
+        "sub": "INS"
+      },
+      {
+        "s": 4,
+        "t": "12:30 - 1:30",
+        "sub": "SDG/Wellness"
+      },
+      {
+        "s": 5,
+        "t": "1:30 - 2:30",
+        "sub": "VA( Sem 1) PA (Sem 2)"
+      },
+      {
+        "s": 6,
+        "t": "2:30-3:30",
+        "sub": "LA\nFrench Phase 1 - MYP 1 Omega\nFrench Phase 2 - MYP 1 Delta\nHindi Phase 1 - R6\nHindi Phase 2 - R4"
+      }
+    ],
+    "TUE": [
+      {
+        "s": 0,
+        "t": "8:30 -8:45",
+        "sub": "HRT"
+      },
+      {
+        "s": 1,
+        "t": "1.8:45-9:45",
+        "sub": "LA\nFrench Phase 1 - MYP 1 Omega\nFrench Phase 2 - MYP 1 Delta\nHindi Phase 1 - R6\nHindi Phase 2 - R4"
+      },
+      {
+        "s": 2,
+        "t": "10:00-11:00",
+        "sub": "PHE"
+      },
+      {
+        "s": 3,
+        "t": "11:00 - 12:00",
+        "sub": "LL"
+      },
+      {
+        "s": 4,
+        "t": "12:30 - 1:30",
+        "sub": "INS"
+      },
+      {
+        "s": 5,
+        "t": "1:30 - 2:30",
+        "sub": "Integrated Sciences"
+      },
+      {
+        "s": 6,
+        "t": "2:30-3:30",
+        "sub": "VA( Sem 1) PA (Sem 2)"
+      }
+    ],
+    "WED": [
+      {
+        "s": 0,
+        "t": "8:30 -8:45",
+        "sub": "HRT"
+      },
+      {
+        "s": 1,
+        "t": "1.8:45-9:45",
+        "sub": "Karate/Silambam"
+      },
+      {
+        "s": 2,
+        "t": "10:00-11:00",
+        "sub": "INS"
+      },
+      {
+        "s": 3,
+        "t": "11:00 - 12:00",
+        "sub": "Maths"
+      },
+      {
+        "s": 4,
+        "t": "12:30 - 1:30",
+        "sub": "LL"
+      },
+      {
+        "s": 5,
+        "t": "1:30 - 2:30",
+        "sub": "PD( Sem 1) DD (Sem 2)"
+      },
+      {
+        "s": 6,
+        "t": "2:30-3:30",
+        "sub": "Integrated Sciences"
+      }
+    ],
+    "THUR": [
+      {
+        "s": 0,
+        "t": "8:30 -8:45",
+        "sub": "HRT"
+      },
+      {
+        "s": 1,
+        "t": "1.8:45-9:45",
+        "sub": "PD( Sem 1) DD (Sem 2)"
+      },
+      {
+        "s": 2,
+        "t": "10:00-11:00",
+        "sub": "LA\nFrench Phase 1 - MYP 1 Omega\nFrench Phase 2 - MYP 1 Delta\nHindi Phase 1 - R6\nHindi Phase 2 - R4"
+      },
+      {
+        "s": 3,
+        "t": "11:00 - 12:00",
+        "sub": "LL"
+      },
+      {
+        "s": 4,
+        "t": "12:30 - 1:30",
+        "sub": "PHE"
+      },
+      {
+        "s": 5,
+        "t": "1:30 - 2:30",
+        "sub": "Integrated Sciences"
+      },
+      {
+        "s": 6,
+        "t": "2:30-3:30",
+        "sub": "LIBRARY"
+      }
+    ],
+    "FRI": [
+      {
+        "s": 0,
+        "t": "8:30 -8:45",
+        "sub": "HRT"
+      },
+      {
+        "s": 1,
+        "t": "1.8:45-9:45",
+        "sub": "Robotics/Chess/Coding"
+      },
+      {
+        "s": 2,
+        "t": "10:00-11:00",
+        "sub": "PHE"
+      },
+      {
+        "s": 3,
+        "t": "11:00 - 12:00",
+        "sub": "VA( Sem 1) PA (Sem 2)"
+      },
+      {
+        "s": 4,
+        "t": "12:30 - 1:30",
+        "sub": "Maths"
+      },
+      {
+        "s": 5,
+        "t": "1:30 - 2:30",
+        "sub": "PD( Sem 1) DD (Sem 2)"
+      },
+      {
+        "s": 6,
+        "t": "2:30-3:30",
+        "sub": "CLUB"
+      }
+    ]
+  },
+  "MYP 2": {
+    "MON": [
+      {
+        "s": 0,
+        "t": "8:30 -8:45",
+        "sub": "HRT"
+      },
+      {
+        "s": 1,
+        "t": "1.8:45-9:45",
+        "sub": "Guitar/Keyboard/Vocal"
+      },
+      {
+        "s": 2,
+        "t": "10:00-11:00",
+        "sub": "DD( Sem 1) PD (Sem 2)"
+      },
+      {
+        "s": 3,
+        "t": "11:00 - 12:00",
+        "sub": "INS"
+      },
+      {
+        "s": 4,
+        "t": "12:30 - 1:30",
+        "sub": "SDG/Wellness"
+      },
+      {
+        "s": 5,
+        "t": "1:30 - 2:30",
+        "sub": "LA\nFrench Phase 3 - MYP2\nFrench Phase 4 -  R6\nHindi Phase 3 - R5\nHindi Phase 4 - R4"
+      },
+      {
+        "s": 6,
+        "t": "2:30-3:30",
+        "sub": "LIBRARY"
+      }
+    ],
+    "TUE": [
+      {
+        "s": 0,
+        "t": "8:30 -8:45",
+        "sub": "HRT"
+      },
+      {
+        "s": 1,
+        "t": "1.8:45-9:45",
+        "sub": "DD( Sem 1) PD (Sem 2)"
+      },
+      {
+        "s": 2,
+        "t": "10:00-11:00",
+        "sub": "VA (Sem1)/PA (Sem 2)"
+      },
+      {
+        "s": 3,
+        "t": "11:00 - 12:00",
+        "sub": "INS"
+      },
+      {
+        "s": 4,
+        "t": "12:30 - 1:30",
+        "sub": "Maths"
+      },
+      {
+        "s": 5,
+        "t": "1:30 - 2:30",
+        "sub": "LL"
+      },
+      {
+        "s": 6,
+        "t": "2:30-3:30",
+        "sub": "PHE"
+      }
+    ],
+    "WED": [
+      {
+        "s": 0,
+        "t": "8:30 -8:45",
+        "sub": "HRT"
+      },
+      {
+        "s": 1,
+        "t": "1.8:45-9:45",
+        "sub": "Karate/Silambam"
+      },
+      {
+        "s": 2,
+        "t": "10:00-11:00",
+        "sub": "VA (Sem1)/PA (Sem 2)"
+      },
+      {
+        "s": 3,
+        "t": "11:00 - 12:00",
+        "sub": "LA\nFrench Phase 3 - MYP2\nFrench Phase 4 -  R6\nHindi Phase 3 - R5\nHindi Phase 4 - R4"
+      },
+      {
+        "s": 4,
+        "t": "12:30 - 1:30",
+        "sub": "LL"
+      },
+      {
+        "s": 5,
+        "t": "1:30 - 2:30",
+        "sub": "Maths"
+      },
+      {
+        "s": 6,
+        "t": "2:30-3:30",
+        "sub": "Integrated Sciences"
+      }
+    ],
+    "THUR": [
+      {
+        "s": 0,
+        "t": "8:30 -8:45",
+        "sub": "HRT"
+      },
+      {
+        "s": 1,
+        "t": "1.8:45-9:45",
+        "sub": "INS"
+      },
+      {
+        "s": 2,
+        "t": "10:00-11:00",
+        "sub": "PHE"
+      },
+      {
+        "s": 3,
+        "t": "11:00 - 12:00",
+        "sub": "Maths"
+      },
+      {
+        "s": 4,
+        "t": "12:30 - 1:30",
+        "sub": "VA (Sem1)/PA (Sem 2)"
+      },
+      {
+        "s": 5,
+        "t": "1:30 - 2:30",
+        "sub": "Integrated Sciences"
+      },
+      {
+        "s": 6,
+        "t": "2:30-3:30",
+        "sub": "DD( Sem 1) PD (Sem 2)"
+      }
+    ],
+    "FRI": [
+      {
+        "s": 0,
+        "t": "8:30 -8:45",
+        "sub": "HRT"
+      },
+      {
+        "s": 1,
+        "t": "1.8:45-9:45",
+        "sub": "Robotics/Chess/Coding"
+      },
+      {
+        "s": 2,
+        "t": "10:00-11:00",
+        "sub": "LA\nFrench Phase 3 - MYP2\nFrench Phase 4 -  R6\nHindi Phase 3 - R5\nHindi Phase 4 - R4"
+      },
+      {
+        "s": 3,
+        "t": "11:00 - 12:00",
+        "sub": "LL"
+      },
+      {
+        "s": 4,
+        "t": "12:30 - 1:30",
+        "sub": "PHE"
+      },
+      {
+        "s": 5,
+        "t": "1:30 - 2:30",
+        "sub": "Integrated Sciences"
+      },
+      {
+        "s": 6,
+        "t": "2:30-3:30",
+        "sub": "CLUB"
+      }
+    ]
+  },
+  "MYP 3": {
+    "MON": [
+      {
+        "s": 0,
+        "t": "8:30 -8:45",
+        "sub": "HRT"
+      },
+      {
+        "s": 1,
+        "t": "1.8:45-9:45",
+        "sub": "Robotics/Chess/Coding"
+      },
+      {
+        "s": 2,
+        "t": "10:00-11:00",
+        "sub": "LA\nFrench Phase 3 - MYP3\nFrench Phase 4 -  R6\nHindi Phase 3 - R5\nHindi Phase 4 - R4"
+      },
+      {
+        "s": 3,
+        "t": "11:00 - 12:00",
+        "sub": "Maths"
+      },
+      {
+        "s": 4,
+        "t": "12:30 - 1:30",
+        "sub": "VA (Sem1)/PA (Sem 2)"
+      },
+      {
+        "s": 5,
+        "t": "1:30 - 2:30",
+        "sub": "PHE"
+      },
+      {
+        "s": 6,
+        "t": "2:30-3:30",
+        "sub": "LL"
+      }
+    ],
+    "TUE": [
+      {
+        "s": 0,
+        "t": "8:30 -8:45",
+        "sub": "HRT"
+      },
+      {
+        "s": 1,
+        "t": "1.8:45-9:45",
+        "sub": "PHE"
+      },
+      {
+        "s": 2,
+        "t": "10:00-11:00",
+        "sub": "DD( Sem 1) PD (Sem 2)"
+      },
+      {
+        "s": 3,
+        "t": "11:00 - 12:00",
+        "sub": "Integrated Sciences"
+      },
+      {
+        "s": 4,
+        "t": "12:30 - 1:30",
+        "sub": "INS"
+      },
+      {
+        "s": 5,
+        "t": "1:30 - 2:30",
+        "sub": "LA\nFrench Phase 3 - MYP3\nFrench Phase 4 -  R6\nHindi Phase 3 - R5\nHindi Phase 4 - R4"
+      },
+      {
+        "s": 6,
+        "t": "2:30-3:30",
+        "sub": "SDG/Wellness"
+      }
+    ],
+    "WED": [
+      {
+        "s": 0,
+        "t": "8:30 -8:45",
+        "sub": "HRT"
+      },
+      {
+        "s": 1,
+        "t": "1.8:45-9:45",
+        "sub": "Guitar/Keyboard/Vocal"
+      },
+      {
+        "s": 2,
+        "t": "10:00-11:00",
+        "sub": "DD( Sem 1) PD (Sem 2)"
+      },
+      {
+        "s": 3,
+        "t": "11:00 - 12:00",
+        "sub": "INS"
+      },
+      {
+        "s": 4,
+        "t": "12:30 - 1:30",
+        "sub": "VA (Sem1)/PA (Sem 2)"
+      },
+      {
+        "s": 5,
+        "t": "1:30 - 2:30",
+        "sub": "Integrated Sciences"
+      },
+      {
+        "s": 6,
+        "t": "2:30-3:30",
+        "sub": "Maths"
+      }
+    ],
+    "THUR": [
+      {
+        "s": 0,
+        "t": "8:30 -8:45",
+        "sub": "HRT"
+      },
+      {
+        "s": 1,
+        "t": "1.8:45-9:45",
+        "sub": "LA\nFrench Phase 3 - MYP3\nFrench Phase 4 -  R6\nHindi Phase 3 - R5\nHindi Phase 4 - R4"
+      },
+      {
+        "s": 2,
+        "t": "10:00-11:00",
+        "sub": "Integrated Sciences"
+      },
+      {
+        "s": 3,
+        "t": "11:00 - 12:00",
+        "sub": "Maths"
+      },
+      {
+        "s": 4,
+        "t": "12:30 - 1:30",
+        "sub": "INS"
+      },
+      {
+        "s": 5,
+        "t": "1:30 - 2:30",
+        "sub": "VA (Sem1)/PA (Sem 2)"
+      },
+      {
+        "s": 6,
+        "t": "2:30-3:30",
+        "sub": "LL"
+      }
+    ],
+    "FRI": [
+      {
+        "s": 0,
+        "t": "8:30 -8:45",
+        "sub": "HRT"
+      },
+      {
+        "s": 1,
+        "t": "1.8:45-9:45",
+        "sub": "Karate/Silambam"
+      },
+      {
+        "s": 2,
+        "t": "10:00-11:00",
+        "sub": "LL"
+      },
+      {
+        "s": 3,
+        "t": "11:00 - 12:00",
+        "sub": "DD( Sem 1) PD (Sem 2)"
+      },
+      {
+        "s": 4,
+        "t": "12:30 - 1:30",
+        "sub": "LIBRARY"
+      },
+      {
+        "s": 5,
+        "t": "1:30 - 2:30",
+        "sub": "PHE"
+      },
+      {
+        "s": 6,
+        "t": "2:30-3:30",
+        "sub": "CLUB"
+      }
+    ]
+  },
+  "MYP 4": {
+    "MON": [
+      {
+        "s": 0,
+        "t": "8:30 -8:45",
+        "sub": "HRT"
+      },
+      {
+        "s": 1,
+        "t": "1.8:45-9:45",
+        "sub": "Robotics/Chess/Coding"
+      },
+      {
+        "s": 2,
+        "t": "10:00-11:00",
+        "sub": "Physics"
+      },
+      {
+        "s": 3,
+        "t": "11:00 - 12:00",
+        "sub": "E-portfolio"
+      },
+      {
+        "s": 4,
+        "t": "12:30 - 1:30",
+        "sub": "LA\nFrench MYP 4\nHindi R6"
+      },
+      {
+        "s": 5,
+        "t": "1:30 - 2:30",
+        "sub": "Biology"
+      },
+      {
+        "s": 6,
+        "t": "2:30-3:30",
+        "sub": "Ext Maths"
+      }
+    ],
+    "TUE": [
+      {
+        "s": 0,
+        "t": "8:30 -8:45",
+        "sub": "HRT"
+      },
+      {
+        "s": 1,
+        "t": "1.8:45-9:45",
+        "sub": "Chemistry"
+      },
+      {
+        "s": 2,
+        "t": "10:00-11:00",
+        "sub": "INS"
+      },
+      {
+        "s": 3,
+        "t": "11:00 - 12:00",
+        "sub": "LL"
+      },
+      {
+        "s": 4,
+        "t": "12:30 - 1:30",
+        "sub": "Physics"
+      },
+      {
+        "s": 5,
+        "t": "1:30 - 2:30",
+        "sub": "Ext Maths"
+      },
+      {
+        "s": 6,
+        "t": "2:30-3:30",
+        "sub": "SDG/Wellness"
+      }
+    ],
+    "WED": [
+      {
+        "s": 0,
+        "t": "8:30 -8:45",
+        "sub": "HRT"
+      },
+      {
+        "s": 1,
+        "t": "1.8:45-9:45",
+        "sub": "Guitar/Keyboard/Vocal"
+      },
+      {
+        "s": 2,
+        "t": "10:00-11:00",
+        "sub": "Chemistry"
+      },
+      {
+        "s": 3,
+        "t": "11:00 - 12:00",
+        "sub": "E-portfolio"
+      },
+      {
+        "s": 4,
+        "t": "12:30 - 1:30",
+        "sub": "LA\nFrench MYP 4\nHindi R6"
+      },
+      {
+        "s": 5,
+        "t": "1:30 - 2:30",
+        "sub": "LL"
+      },
+      {
+        "s": 6,
+        "t": "2:30-3:30",
+        "sub": "INS"
+      }
+    ],
+    "THUR": [
+      {
+        "s": 0,
+        "t": "8:30 -8:45",
+        "sub": "HRT"
+      },
+      {
+        "s": 1,
+        "t": "1.8:45-9:45",
+        "sub": "Chemistry"
+      },
+      {
+        "s": 2,
+        "t": "10:00-11:00",
+        "sub": "Ext Maths"
+      },
+      {
+        "s": 3,
+        "t": "11:00 - 12:00",
+        "sub": "INS"
+      },
+      {
+        "s": 4,
+        "t": "12:30 - 1:30",
+        "sub": "LL"
+      },
+      {
+        "s": 5,
+        "t": "1:30 - 2:30",
+        "sub": "Biology"
+      },
+      {
+        "s": 6,
+        "t": "2:30-3:30",
+        "sub": "Physics"
+      }
+    ],
+    "FRI": [
+      {
+        "s": 0,
+        "t": "8:30 -8:45",
+        "sub": "HRT"
+      },
+      {
+        "s": 1,
+        "t": "1.8:45-9:45",
+        "sub": "Karate/Silambam"
+      },
+      {
+        "s": 2,
+        "t": "10:00-11:00",
+        "sub": "E-portfolio"
+      },
+      {
+        "s": 3,
+        "t": "11:00 - 12:00",
+        "sub": "LIBRARY"
+      },
+      {
+        "s": 4,
+        "t": "12:30 - 1:30",
+        "sub": "LA\nFrench MYP 4\nHindi R6"
+      },
+      {
+        "s": 5,
+        "t": "1:30 - 2:30",
+        "sub": "Biology"
+      },
+      {
+        "s": 6,
+        "t": "2:30-3:30",
+        "sub": "CLUB"
+      }
+    ]
+  },
+  "MYP 5": {
+    "MON": [
+      {
+        "s": 0,
+        "t": "8:30 -8:45",
+        "sub": "HRT"
+      },
+      {
+        "s": 1,
+        "t": "1.8:45-9:45",
+        "sub": "Robotics/Chess/Coding"
+      },
+      {
+        "s": 2,
+        "t": "10:00-11:00",
+        "sub": "LL"
+      },
+      {
+        "s": 3,
+        "t": "11:00 - 12:00",
+        "sub": "LA\nFrench MYP 5\nHindi R6"
+      },
+      {
+        "s": 4,
+        "t": "12:30 - 1:30",
+        "sub": "Biology"
+      },
+      {
+        "s": 5,
+        "t": "1:30 - 2:30",
+        "sub": "Physics"
+      },
+      {
+        "s": 6,
+        "t": "2:30-3:30",
+        "sub": "Chemistry"
+      }
+    ],
+    "TUE": [
+      {
+        "s": 0,
+        "t": "8:30 -8:45",
+        "sub": "HRT"
+      },
+      {
+        "s": 1,
+        "t": "1.8:45-9:45",
+        "sub": "LL"
+      },
+      {
+        "s": 2,
+        "t": "10:00-11:00",
+        "sub": "LA\nFrench MYP 5\nHindi R6"
+      },
+      {
+        "s": 3,
+        "t": "11:00 - 12:00",
+        "sub": "Maths (STD/Ext)\nMaths Std - MYP5\nMaths Ext R6"
+      },
+      {
+        "s": 4,
+        "t": "12:30 - 1:30",
+        "sub": "E-portfolio"
+      },
+      {
+        "s": 5,
+        "t": "1:30 - 2:30",
+        "sub": "I&S"
+      },
+      {
+        "s": 6,
+        "t": "2:30-3:30",
+        "sub": "SDG/Wellness"
+      }
+    ],
+    "WED": [
+      {
+        "s": 0,
+        "t": "8:30 -8:45",
+        "sub": "HRT"
+      },
+      {
+        "s": 1,
+        "t": "1.8:45-9:45",
+        "sub": "Guitar/Keyboard/Vocal"
+      },
+      {
+        "s": 2,
+        "t": "10:00-11:00",
+        "sub": "Physics"
+      },
+      {
+        "s": 3,
+        "t": "11:00 - 12:00",
+        "sub": "Chemistry"
+      },
+      {
+        "s": 4,
+        "t": "12:30 - 1:30",
+        "sub": "Biology"
+      },
+      {
+        "s": 5,
+        "t": "1:30 - 2:30",
+        "sub": "Maths (STD/Ext)\nMaths Std-MYP5\nMaths Ext R2"
+      },
+      {
+        "s": 6,
+        "t": "2:30-3:30",
+        "sub": "E-portfolio"
+      }
+    ],
+    "THUR": [
+      {
+        "s": 0,
+        "t": "8:30 -8:45",
+        "sub": "HRT"
+      },
+      {
+        "s": 1,
+        "t": "1.8:45-9:45",
+        "sub": "Maths (STD/Ext)\nMaths Std- MYP5\nMaths Ext R2"
+      },
+      {
+        "s": 2,
+        "t": "10:00-11:00",
+        "sub": "Biology"
+      },
+      {
+        "s": 3,
+        "t": "11:00 - 12:00",
+        "sub": "E-portfolio"
+      },
+      {
+        "s": 4,
+        "t": "12:30 - 1:30",
+        "sub": "IDU/PP"
+      },
+      {
+        "s": 5,
+        "t": "1:30 - 2:30",
+        "sub": "LL"
+      },
+      {
+        "s": 6,
+        "t": "2:30-3:30",
+        "sub": "I&S"
+      }
+    ],
+    "FRI": [
+      {
+        "s": 0,
+        "t": "8:30 -8:45",
+        "sub": "HRT"
+      },
+      {
+        "s": 1,
+        "t": "1.8:45-9:45",
+        "sub": "Karate/Silambam"
+      },
+      {
+        "s": 2,
+        "t": "10:00-11:00",
+        "sub": "Chemistry"
+      },
+      {
+        "s": 3,
+        "t": "11:00 - 12:00",
+        "sub": "I&S"
+      },
+      {
+        "s": 4,
+        "t": "12:30 - 1:30",
+        "sub": "Physics"
+      },
+      {
+        "s": 5,
+        "t": "1:30 - 2:30",
+        "sub": "LA\nFrench MYP 5\nHindi R6"
+      },
+      {
+        "s": 6,
+        "t": "2:30-3:30",
+        "sub": "CLUB"
+      }
+    ]
+  },
+  "DP 1": {
+    "MON": [
+      {
+        "s": 0,
+        "t": "8:30-8:45",
+        "sub": "HRT"
+      },
+      {
+        "s": 1,
+        "t": "1.8:45-9:45",
+        "sub": "LA Fr/Gr(R6) /Hindi(R5)"
+      },
+      {
+        "s": 2,
+        "t": "2. 10:00-11:00",
+        "sub": "BM/VA(Arts Room)"
+      },
+      {
+        "s": 3,
+        "t": "3. 11:00 - 12:00",
+        "sub": "PHYSICS"
+      },
+      {
+        "s": 4,
+        "t": "4. 12:00 - 1:00",
+        "sub": "CS(ICT Lab)/CHEM & BMT(Lib)"
+      },
+      {
+        "s": 5,
+        "t": "5 1:30 - 2:30",
+        "sub": "BIO(R2)/ECO"
+      },
+      {
+        "s": 6,
+        "t": "6 2:30-3:30",
+        "sub": "ENGLISH"
+      }
+    ],
+    "TUE": [
+      {
+        "s": 0,
+        "t": "8:30-8:45",
+        "sub": "HRT"
+      },
+      {
+        "s": 1,
+        "t": "1.8:45-9:45",
+        "sub": "PHYSICS"
+      },
+      {
+        "s": 2,
+        "t": "2. 10:00-11:00",
+        "sub": "MAA/MAI(R5)"
+      },
+      {
+        "s": 3,
+        "t": "3. 11:00 - 12:00",
+        "sub": "BM/VA(Arts Room)"
+      },
+      {
+        "s": 4,
+        "t": "4. 12:00 - 1:00",
+        "sub": "MAA/MAI(R5)"
+      },
+      {
+        "s": 5,
+        "t": "5 1:30 - 2:30",
+        "sub": "BIO(Lab)/ECO"
+      },
+      {
+        "s": 6,
+        "t": "6 2:30-3:30",
+        "sub": "PHYSICS"
+      }
+    ],
+    "WED": [
+      {
+        "s": 0,
+        "t": "8:30-8:45",
+        "sub": "HRT"
+      },
+      {
+        "s": 1,
+        "t": "1.8:45-9:45",
+        "sub": "CS(ICT Lab)/CHEM & BMT(R6)"
+      },
+      {
+        "s": 2,
+        "t": "2. 10:00-11:00",
+        "sub": "LA Fr/Gr(R4)/Hindi (R5)"
+      },
+      {
+        "s": 3,
+        "t": "3. 11:00 - 12:00",
+        "sub": "MAA/MAI (R2)"
+      },
+      {
+        "s": 4,
+        "t": "4. 12:00 - 1:00",
+        "sub": "MAA/MAI (R2)"
+      },
+      {
+        "s": 5,
+        "t": "5 1:30 - 2:30",
+        "sub": "BM/VA (Arts Room)"
+      },
+      {
+        "s": 6,
+        "t": "6 2:30-3:30",
+        "sub": "BIO(R6) /ECO"
+      }
+    ],
+    "THUR": [
+      {
+        "s": 0,
+        "t": "8:30-8:45",
+        "sub": "HRT"
+      },
+      {
+        "s": 1,
+        "t": "1.8:45-9:45",
+        "sub": "ENGLISH"
+      },
+      {
+        "s": 2,
+        "t": "2. 10:00-11:00",
+        "sub": "CS/CHEM & BMT"
+      },
+      {
+        "s": 3,
+        "t": "3. 11:00 - 12:00",
+        "sub": "LA Fr/Gr(R2)/Hindi(R5)"
+      },
+      {
+        "s": 4,
+        "t": "4. 12:00 - 1:00",
+        "sub": "CS(ICT Lab)/CHEM & BMT(R2)"
+      },
+      {
+        "s": 5,
+        "t": "5 1:30 - 2:30",
+        "sub": "TOK"
+      },
+      {
+        "s": 6,
+        "t": "6 2:30-3:30",
+        "sub": "TOK"
+      }
+    ],
+    "FRI": [
+      {
+        "s": 0,
+        "t": "8:30-8:45",
+        "sub": "HRT"
+      },
+      {
+        "s": 1,
+        "t": "1.8:45-9:45",
+        "sub": "ROBOTICS/CHESS"
+      },
+      {
+        "s": 2,
+        "t": "2. 10:00-11:00",
+        "sub": "ENGLISH"
+      },
+      {
+        "s": 3,
+        "t": "3. 11:00 - 12:00",
+        "sub": "PHYSICS"
+      },
+      {
+        "s": 4,
+        "t": "4. 12:00 - 1:00",
+        "sub": "BM/VA (Arts Room)"
+      },
+      {
+        "s": 5,
+        "t": "5 1:30 - 2:30",
+        "sub": "BIO(Lab) /ECO"
+      },
+      {
+        "s": 6,
+        "t": "6 2:30-3:30",
+        "sub": "WELLNESS/SDG/CAREER"
+      }
+    ]
+  },
+  "DP 2": {
+    "MON": [
+      {
+        "s": 0,
+        "t": "8:30-8:45",
+        "sub": "HRT"
+      },
+      {
+        "s": 1,
+        "t": "1.8:45-9:45",
+        "sub": "ENGLISH"
+      },
+      {
+        "s": 2,
+        "t": "2. 10:00-11:00",
+        "sub": "LA Fr/Gr(R2)"
+      },
+      {
+        "s": 3,
+        "t": "3. 11:00 - 12:00",
+        "sub": "BM/ESS(R2)/PSY(senco room)"
+      },
+      {
+        "s": 4,
+        "t": "4. 12:00 - 1:00",
+        "sub": "PHYSICS"
+      },
+      {
+        "s": 5,
+        "t": "5 1:30 - 2:30",
+        "sub": "CHEM/CS"
+      },
+      {
+        "s": 6,
+        "t": "6 2:30-3:30",
+        "sub": "BIO/VA (Arts Room)"
+      }
+    ],
+    "TUE": [
+      {
+        "s": 0,
+        "t": "8:30-8:45",
+        "sub": "HRT"
+      },
+      {
+        "s": 1,
+        "t": "1.8:45-9:45",
+        "sub": "BIO/VA (Arts Room)"
+      },
+      {
+        "s": 2,
+        "t": "2. 10:00-11:00",
+        "sub": "PHYSICS"
+      },
+      {
+        "s": 3,
+        "t": "3. 11:00 - 12:00",
+        "sub": "CHEM/CS(ICT Lab)"
+      },
+      {
+        "s": 4,
+        "t": "4. 12:00 - 1:00",
+        "sub": "BM/ESS(R6)/PSY(senco room)"
+      },
+      {
+        "s": 5,
+        "t": "5 1:30 - 2:30",
+        "sub": "LA Fr/Gr(R2)"
+      },
+      {
+        "s": 6,
+        "t": "6 2:30-3:30",
+        "sub": "MAA"
+      }
+    ],
+    "WED": [
+      {
+        "s": 0,
+        "t": "8:30-8:45",
+        "sub": "HRT"
+      },
+      {
+        "s": 1,
+        "t": "1.8:45-9:45",
+        "sub": "BIO(Lab/class)/VA (Arts Room)"
+      },
+      {
+        "s": 2,
+        "t": "2. 10:00-11:00",
+        "sub": "ENGLISH"
+      },
+      {
+        "s": 3,
+        "t": "3. 11:00 - 12:00",
+        "sub": "WELLNESS/SDG/CAREER"
+      },
+      {
+        "s": 4,
+        "t": "4. 12:00 - 1:00",
+        "sub": "CHEM/CS(ICT Lab)"
+      },
+      {
+        "s": 5,
+        "t": "5 1:30 - 2:30",
+        "sub": "TOK"
+      },
+      {
+        "s": 6,
+        "t": "6 2:30-3:30",
+        "sub": "TOK"
+      }
+    ],
+    "THUR": [
+      {
+        "s": 0,
+        "t": "8:30-8:45",
+        "sub": "HRT"
+      },
+      {
+        "s": 1,
+        "t": "1.8:45-9:45",
+        "sub": "BIO/VA (Arts Room)"
+      },
+      {
+        "s": 2,
+        "t": "2. 10:00-11:00",
+        "sub": "MAA"
+      },
+      {
+        "s": 3,
+        "t": "3. 11:00 - 12:00",
+        "sub": "MAA"
+      },
+      {
+        "s": 4,
+        "t": "4. 12:00 - 1:00",
+        "sub": "LA Fr/Gr(R6)"
+      },
+      {
+        "s": 5,
+        "t": "5 1:30 - 2:30",
+        "sub": "PHYSICS"
+      },
+      {
+        "s": 6,
+        "t": "6 2:30-3:30",
+        "sub": "BM/ESS(Bio Lab)/PSY(Senco Room)"
+      }
+    ],
+    "FRI": [
+      {
+        "s": 0,
+        "t": "8:30-8:45",
+        "sub": "HRT"
+      },
+      {
+        "s": 1,
+        "t": "1.8:45-9:45",
+        "sub": "ROBOTICS/CHESS"
+      },
+      {
+        "s": 2,
+        "t": "2. 10:00-11:00",
+        "sub": "PHYSICS"
+      },
+      {
+        "s": 3,
+        "t": "3. 11:00 - 12:00",
+        "sub": "BM/ESS(Bio Lab)/PSY(senco Room)"
+      },
+      {
+        "s": 4,
+        "t": "4. 12:00 - 1:00",
+        "sub": "CHEM/CS(ICT Lab)"
+      },
+      {
+        "s": 5,
+        "t": "5 1:30 - 2:30",
+        "sub": "ENGLISH"
+      },
+      {
+        "s": 6,
+        "t": "6 2:30-3:30",
+        "sub": "MAA"
+      }
+    ]
+  }
+};
 var selectedGrade = '';
 var selectedDay = 'MON';
 var dayNames = { MON:'Monday', TUE:'Tuesday', WED:'Wednesday', THUR:'Thursday', FRI:'Friday' };
@@ -133,7 +4472,7 @@ function renderSessions() {
   var c = byId('sessionsContainer'); c.innerHTML = '';
   if (!selectedGrade) { byId('selectedLine').textContent = 'Select a grade to begin.'; return; }
   byId('selectedLine').textContent = 'Selected: ' + selectedGrade + ' | ' + dayNames[selectedDay] + ' | ' + byId('logDate').value;
-  var sessions = TIMETABLES[selectedGrade][selectedDay] || [];
+  var sessions = (TIMETABLES[selectedGrade] && TIMETABLES[selectedGrade][selectedDay]) ? TIMETABLES[selectedGrade][selectedDay] : [];
   sessions.forEach(function(s) {
     var card = document.createElement('div'); card.className = 'session-card'; card.setAttribute('data-session', s.s); card.setAttribute('data-time', s.t);
     card.innerHTML = '<div class="session-header"><span>Session '+s.s+' ('+safe(s.t)+')</span><span>Subject can be edited</span></div>' +
